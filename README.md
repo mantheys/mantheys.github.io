@@ -2,6 +2,10 @@
 
 Personal academic site and CV, both generated from one set of data files.
 
+**Live example: [mantheys.github.io](https://mantheys.github.io)** —
+[the generated CV](https://mantheys.github.io/assets/cv.pdf) comes from the same
+`_data/*.yml` as the pages around it.
+
 ```
 _data/*.yml  +  INSPIRE-HEP
      |
