@@ -1,0 +1,19 @@
+# Selected code, shown on the Projects page in the order listed.
+# Each entry needs: name, description
+# Optional: repo, website, docs, paper, language, license, role
+- name: plotipus
+  repo: https://github.com/mantheys/plotipus
+  language: Python
+  license: MIT
+  description: >-
+    Publication plots and tables from pickled pandas DataFrames, driven by plain
+    text command lists. Keeps figure definitions in version control alongside the
+    analysis rather than in one-off scripts, so a paper's figures can be
+    regenerated from a single command file.
+
+- name: cathersis
+  repo: https://github.com/mantheys/cathersis
+  language: TeX
+  description: >-
+    LaTeX sources for my Ph.D. thesis, *Liquid Argon Detector Development for the
+    Neutrino Oscillation Measurement with the DUNE experiment*.

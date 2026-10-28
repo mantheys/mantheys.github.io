@@ -53,6 +53,7 @@ nav_pages:
   - name: publications
     label: Papers
   - name: talks
+  - name: projects
 
 # ============================================================
 # STEP 5: Publications (assets/ref.bib)
