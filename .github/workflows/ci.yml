@@ -1,7 +1,7 @@
 name: CI
 
-# Builds the site and checks internal links on every pull request.
-# Deployment happens separately in deploy.yml on push to `source`.
+# On every pull request: builds the CV PDF, builds the site, and checks internal
+# links. Deployment happens separately in deploy.yml on push to `main`.
 
 on:
   pull_request:
@@ -53,3 +53,48 @@ jobs:
             --allow-missing-href \
             --ignore-missing-alt \
             --no-enforce-https
+
+  cv:
+    runs-on: ubuntu-latest
+    name: cv pdf
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      # Same package set as deploy.yml: fontspec and unicode-math (xetex),
+      # tcolorbox and enumitem (latex-extra), sourcesanspro and fontawesome
+      # (fonts-extra), academicons (science).
+      - name: Install CV build dependencies
+        run: |
+          python -m pip install -r tools/requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends \
+            texlive-xetex texlive-latex-extra texlive-fonts-extra \
+            texlive-science fonts-font-awesome
+
+      # Catches a broken template or data file here, rather than after merge
+      # when deploy.yml would fail and quietly leave the old site published.
+      - name: Build CV PDF
+        run: python tools/build_cv.py
+
+      # The published CV must carry no home address or phone number. Assert that
+      # structurally -- naming the actual values here would commit them to this
+      # public repo, which is the very thing _data/private.yml exists to avoid.
+      - name: Check the public CV declares no private contact details
+        run: |
+          if grep -q '^\\mobile{' cv/cv.tex; then
+            echo "::error::cv/cv.tex emits a phone number in a non-private build"
+            exit 1
+          fi
+          inst=$(python3 -c "import yaml;print(yaml.safe_load(open('_data/profile.yml'))['institution'])")
+          if ! grep -qF "\\address{$inst}" cv/cv.tex; then
+            echo "::error::the public CV address is not the institution fallback"
+            exit 1
+          fi
+          echo "public CV declares institution only"
