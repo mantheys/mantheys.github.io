@@ -57,7 +57,7 @@
     {<< e.institution|tex >>}
     {<< e.location|tex >>}
     {<< e.dates|tex >>}
-    {Thesis: << e.thesis|md >>}\vspace{0.25cm}
+    {Thesis: << e.thesis|md >><% if e.get('status') %> << e.status|md >><% endif %>}\vspace{0.25cm}
 <% endfor %>
 \end{cventries}
 \vspace{-0.1cm}

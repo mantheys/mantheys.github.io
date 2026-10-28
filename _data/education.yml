@@ -2,11 +2,13 @@
 - degree: Ph.D. in Physics
   institution: Universidad Autónoma de Madrid
   location: Madrid, Spain
-  dates: 2021 - July 2026
+  dates: 2021 - 2026
   short: "(2026) Ph.D. Physics, UAM Madrid"
   thesis: >-
     Liquid Argon Detector Development for the Neutrino Oscillation Measurement
     with the DUNE experiment.
+  # Shown after the thesis title. Add the date here once the defence is scheduled.
+  status: Thesis submitted; defence pending.
 
 - degree: M.S. in Particle and Astroparticle Physics
   institution: Università di Roma La Sapienza

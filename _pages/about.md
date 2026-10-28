@@ -30,7 +30,7 @@ ORCID <a href="{{ site.links.orcid }}">0000-0002-9368-9120</a> &middot;
 <ul>
 {% for e in site.data.education %}
 <li><strong>{{ e.degree }}</strong>, {{ e.institution }}, {{ e.location }} ({{ e.dates }})<br>
-<span style="color: var(--text-secondary);">Thesis: {{ e.thesis }}</span></li>
+<span style="color: var(--text-secondary);">Thesis: {{ e.thesis }}{% if e.status %} <em>{{ e.status }}</em>{% endif %}</span></li>
 {% endfor %}
 </ul>
 </div>
