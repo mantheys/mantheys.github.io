@@ -41,20 +41,24 @@ def _escape(text: str) -> str:
     return out.replace("~", r"\textasciitilde{}").replace("^", r"\textasciicircum{}")
 
 
-def tex(text: object) -> str:
-    """Escape LaTeX specials, leaving any $...$ math from INSPIRE intact.
+# INSPIRE titles carry real LaTeX in both common spellings: "$\\pi^+$-Ar" and
+# "\\(\\nu\\) cross-section". Escaping $, ^ or the backslash would print the markup
+# instead of the symbol, so these spans are passed through untouched.
+MATH_RE = re.compile(r"\$[^$]*\$|\\\(.*?\\\)")
 
-    INSPIRE titles carry real LaTeX ("$\\pi^+$-Ar total inelastic cross sections"),
-    so blindly escaping $ and ^ would print the markup instead of the symbol.
-    Segments between balanced dollar signs are passed through untouched.
-    """
+
+def tex(text: object) -> str:
+    """Escape LaTeX specials, leaving inline math from INSPIRE intact."""
     if text is None:
         return ""
-    parts = str(text).split("$")
-    if len(parts) > 1 and len(parts) % 2 == 1:
-        # Balanced delimiters: odd indices are math, even indices are prose.
-        return "$".join(p if i % 2 else _escape(p) for i, p in enumerate(parts))
-    return _escape(str(text))
+    s = str(text)
+    out, last = [], 0
+    for m in MATH_RE.finditer(s):
+        out.append(_escape(s[last:m.start()]))
+        out.append(m.group(0))
+        last = m.end()
+    out.append(_escape(s[last:]))
+    return "".join(out)
 
 
 def md(text: object) -> str:

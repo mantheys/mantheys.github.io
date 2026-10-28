@@ -9,6 +9,9 @@
 
 \documentclass[11pt, a4paper]{awesome-cv}
 \usepackage{academicons}
+% Lets a section demand enough room to stay whole, instead of leaving its
+% heading orphaned at the foot of a page with the content overleaf.
+\usepackage{needspace}
 
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 \fontdir[fonts/]
@@ -56,8 +59,8 @@
     {<< e.degree|tex >>}
     {<< e.institution|tex >>}
     {<< e.location|tex >>}
-    {<< e.dates|tex >>}
-    {Thesis: << e.thesis|md >><% if e.get('status') %> << e.status|md >><% endif %>}\vspace{0.25cm}
+    {<< e.dates|tex >><% if e.get('status') %> (<< e.status|tex >>)<% endif %>}
+    {Thesis: << e.thesis|md >>}\vspace{0.18cm}
 <% endfor %>
 \end{cventries}
 \vspace{-0.1cm}
@@ -95,7 +98,7 @@
       \end{cvitems}
     }\vspace{0.4cm}
 <% else %>
-    {<< p.get('summary','')|md >>}\vspace{0.25cm}
+    {<< p.get('summary','')|md >>}\vspace{0.18cm}
 <% endif %>
 <% endfor %>
 \end{cventries}
@@ -104,6 +107,9 @@
 %-------------------------------------------------------------------------------
 %	SKILLS
 %-------------------------------------------------------------------------------
+% Skills is short and reads badly split: if the whole section will not fit in
+% what is left of the page, start it on the next one.
+\needspace{15\baselineskip}
 \cvsection{Skills}
 
 \cvsubsection{Technical}
@@ -171,6 +177,7 @@
 %-------------------------------------------------------------------------------
 \cvsection{Publications}
 
+\needspace{6\baselineskip}
 \cvsubsection{Selected articles and proceedings}
 \begin{cvpublications}
 <% for p in publications.selected %>
@@ -182,6 +189,8 @@
 \end{cvpublications}
 
 <% if publications.get('collaboration') %>
+% Keep this heading with at least the first few entries.
+\needspace{6\baselineskip}
 \cvsubsection{As a member of the DUNE Collaboration (<< publications.collaboration|length >> papers)}
 \begin{cvpublications}
 <% for p in publications.collaboration %>

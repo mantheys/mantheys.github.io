@@ -7,8 +7,9 @@
   thesis: >-
     Liquid Argon Detector Development for the Neutrino Oscillation Measurement
     with the DUNE experiment.
-  # Shown after the thesis title. Add the date here once the defence is scheduled.
-  status: Thesis submitted; defence pending.
+  # Shown in parentheses after the dates. Keep it short -- the thesis line is
+  # already near the full text width. Add the date once the defence is scheduled.
+  status: defence pending
 
 - degree: M.S. in Particle and Astroparticle Physics
   institution: Università di Roma La Sapienza

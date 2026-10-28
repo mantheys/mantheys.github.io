@@ -658,21 +658,27 @@
 }
 
 % Define an environment for publications
+%
+% FIXED (was broken as vendored): the begin hook both opened AND closed its
+% tabular*, and the \vspace{-1cm} dragged the content up over the preceding
+% \cvsubsection heading. Rebuilt as a justified paragraph block rather than a
+% table: a tabular* cannot break across pages, and a publication list runs to
+% several pages, so a table overflows instead of flowing.
 \newenvironment{cvpublications}{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-1cm}
-  %\begin{center}
-    \setlength\tabcolsep{0pt}
-    \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 1 cm}}
-  \end{tabular*}
+  \begin{justify}
+  \setlength{\parindent}{0pt}
 }{%
-  %\end{center}
+  \end{justify}
 }
 % Define a line of cv information(honor, award or something else)
 % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
+% FIXED: the entry had no row terminator, so its link ran into the next entry's
+% authors. Each entry is now two paragraphs with a little air after it.
 \newcommand*{\cvpublication}[3]{%
-  \publicationauthorstyle{#1}, \publicationtitlestyle{#2} \\ \small{\faLink}\hspace{2.0mm}\vspace{0.8mm}\publicationlinkstyle{#3}
+  \publicationauthorstyle{#1}, \publicationtitlestyle{#2}\par
+  \small{\faLink}\hspace{2.0mm}\publicationlinkstyle{#3}\par
+  \vspace{0.6em}
 }
 
 % Define an environment for cvskill
