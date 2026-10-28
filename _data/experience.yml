@@ -6,8 +6,8 @@ responsibilities:
     Measurement of the absolute **Photon Detection Efficiency** of full-scale
     X-ARAPUCAs for the DUNE Far Detector Vertical Drift.
   - >-
-    Cryogenic characterisation of **SiPM** arrays -- FBK NUV-HD-Cryo, Hamamatsu
-    VUV4 and HWB MPPC -- for the DUNE **Photon Detection System**.
+    Cryogenic characterisation of **SiPM** arrays -- FBK NUV-HD-Cryo and
+    Hamamatsu VUV4 -- for the DUNE **Photon Detection System**.
   - Software implementation of **Solar Neutrino Reconstruction** chain in LArSoft.
   - >-
     Development of waveform filtering and deconvolution, photon pulse
