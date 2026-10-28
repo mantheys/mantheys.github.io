@@ -1,10 +1,25 @@
 version: 2
 updates:
+  # One grouped pull request per ecosystem per month, rather than one per
+  # dependency. Action bumps are near-risk-free and the grouped diff stays easy
+  # to read; if a grouped PR ever goes red, read the diff to see which entry did
+  # it rather than splitting the group back up.
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
+    groups:
+      github-actions:
+        patterns: ["*"]
+    commit-message:
+      prefix: "Bump"
+
   - package-ecosystem: bundler
     directory: /
     schedule:
       interval: monthly
+    groups:
+      bundler:
+        patterns: ["*"]
+    commit-message:
+      prefix: "Bump"
