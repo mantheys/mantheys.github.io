@@ -11,7 +11,7 @@ photo: placeholder.svg  # replace with your own photo in images/
 # STEP 2: Your Links (optional -- leave blank to hide an icon)
 # ============================================================
 links:
-  google_scholar: ""   # paste your Scholar profile URL
+  google_scholar: "https://scholar.google.com/citations?user=XLKtLaAAAAAJ"
   github: "https://github.com/mantheys"
   researchgate: ""
   orcid: "https://orcid.org/0000-0002-9368-9120"
