@@ -14,6 +14,9 @@ languages:
   - name: German
     level: EOI Palma -- C1
     detail: "Speaking: advanced, Reading: advanced, Writing: advanced and Listening: advanced"
+  - name: Catalan
+    level: C1
+    detail: "Speaking: advanced, Reading: advanced, Writing: advanced and Listening: advanced"
   - name: Italian
     level: Bremen University -- A2
     detail: "Speaking: intermediate, Reading: intermediate, Writing: intermediate and Listening: intermediate"

@@ -2,7 +2,23 @@
 # `highlights` are rendered as bullet points; **bold** markers survive into LaTeX.
 responsibilities:
   - Lead analyst of the CIEMAT apparatus for the VD **X-ARAPUCA Characterisation**.
+  - >-
+    Measurement of the absolute **Photon Detection Efficiency** of full-scale
+    X-ARAPUCAs for the DUNE Far Detector Vertical Drift.
+  - >-
+    Cryogenic characterisation of **SiPM** arrays -- FBK NUV-HD-Cryo, Hamamatsu
+    VUV4 and HWB MPPC -- for the DUNE **Photon Detection System**.
   - Software implementation of **Solar Neutrino Reconstruction** chain in LArSoft.
+  - >-
+    Development of waveform filtering and deconvolution, photon pulse
+    reconstruction and **charge--light matching** for the DUNE **Monte--Carlo**
+    workflow.
+  - >-
+    **Solar neutrino sensitivity** analyses: day--night asymmetry, HEP neutrino
+    discovery potential and DUNE's reach on the solar oscillation parameters.
+  - >-
+    Presentation of results at DUNE collaboration meetings and international
+    conferences.
 
 positions:
   - title: Scientific Researcher
