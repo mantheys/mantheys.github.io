@@ -1,0 +1,19 @@
+technical:
+  - category: Programming
+    detail: C++, Python, Geant4, LArSoft and LaTeX
+  - category: Computing
+    detail: Linux, Git and HTCondor
+
+languages:
+  - name: Spanish
+    level: Mother tongue
+    detail: "Speaking: native, Reading: native, Writing: native and Listening: native"
+  - name: English
+    level: Cambridge -- C2
+    detail: "Speaking: proficient, Reading: proficient, Writing: proficient and Listening: proficient"
+  - name: German
+    level: EOI Palma -- C1
+    detail: "Speaking: advanced, Reading: advanced, Writing: advanced and Listening: advanced"
+  - name: Italian
+    level: Bremen University -- A2
+    detail: "Speaking: intermediate, Reading: intermediate, Writing: intermediate and Listening: intermediate"

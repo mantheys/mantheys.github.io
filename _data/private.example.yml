@@ -1,0 +1,7 @@
+# Copy to _data/private.yml and fill in. That file is gitignored, so these
+# details never reach the public repository or the published website.
+#
+# Build the full CV for a job application with:
+#     python3 tools/build_cv.py --private -o cv-private.pdf
+address: "Street, number, City postcode, Country"
+mobile: "(+00) 000000000"

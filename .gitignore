@@ -1,0 +1,19 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+.DS_Store
+vendor/
+.bundle/
+.worktrees/
+_config_pages.yml
+
+# LaTeX build artefacts from tools/build_cv.py
+cv/cv.tex
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.pdf
+
+# Personal contact details, deliberately kept out of the public repo
+_data/private.yml
+cv-private.pdf

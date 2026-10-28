@@ -1,0 +1,63 @@
+# Conference contributions and schools, newest first.
+# Site uses: title, event, year, location, date, type, url, slides, video
+# CV build additionally uses: kind (Talk|Poster), dates (full range), section
+- title: DUNE's Sensitivity to Solar Neutrinos
+  event: Dark Matter and Neutrinos 2025
+  location: Paris, France
+  year: 2025
+  date: 5-9 May
+  dates: 05/05/2025 - 09/05/2025
+  kind: Talk
+  type: contributed
+  section: schools
+
+- title: Low energy and BSM searches in DUNE
+  event: Lake Louise Winter Institute 2025
+  location: Alberta, Canada
+  year: 2025
+  date: 2-8 March
+  dates: 02/03/2025 - 08/03/2025
+  kind: Talk
+  type: contributed
+  section: conferences
+
+- title: X-ARAPUCA Photon Detection Efficiency for DUNE Far-Detector Vertical-Drift
+  event: Light Detection In Noble Elements Conference 2024
+  location: Sao Paulo, Brazil
+  year: 2024
+  date: 26-28 August
+  dates: 26/08/2024 - 28/08/2024
+  kind: Talk
+  type: contributed
+  section: conferences
+
+- title: DUNE's Low Energy Physics Searches
+  event: 42nd International Conference on High Energy Physics
+  location: Prague, Czech Republic
+  year: 2024
+  date: 17-24 July
+  dates: 17/07/2024 - 24/07/2024
+  kind: Poster
+  type: contributed
+  section: conferences
+  url: https://doi.org/10.5281/zenodo.13124372
+
+- title: DUNE Sensitivity to Solar Neutrinos
+  event: XXXI International Conference on Neutrino Physics and Astrophysics
+  location: Milan, Italy
+  year: 2024
+  date: 17-21 June
+  dates: 17/06/2024 - 21/06/2024
+  kind: Poster
+  type: contributed
+  section: conferences
+
+- title: Status of BULLKID, an array of kinetic inductance detectors to search for Dark Matter
+  event: 19th International Workshop on Low Temperature Detectors
+  location: Virtual
+  year: 2021
+  date: 19-30 July
+  dates: 19/07/2021 - 30/07/2021
+  kind: Poster
+  type: contributed
+  section: conferences

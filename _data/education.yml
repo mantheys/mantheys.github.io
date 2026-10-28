@@ -1,0 +1,27 @@
+# Academic education, newest first. Rendered on the About page and in the CV PDF.
+- degree: Ph.D. in Physics
+  institution: Universidad Autónoma de Madrid
+  location: Madrid, Spain
+  dates: 2021 - July 2026
+  short: "(2026) Ph.D. Physics, UAM Madrid"
+  thesis: >-
+    Liquid Argon Detector Development for the Neutrino Oscillation Measurement
+    with the DUNE experiment.
+
+- degree: M.S. in Particle and Astroparticle Physics
+  institution: Università di Roma La Sapienza
+  location: Rome, Italy
+  dates: 2018 - 2021
+  short: "(2021) M.S. Particle Physics, La Sapienza"
+  thesis: >-
+    BULLKID. Low Mass Dark Matter Research with Microwave Kinetic Inductance
+    Detectors (MKIDS).
+
+- degree: B.S. in Physics
+  institution: University of Bremen
+  location: Bremen, Germany
+  dates: 2014 - 2018
+  short: "(2018) B.S. Physics, U. Bremen"
+  thesis: >-
+    Oxygen-Radical Production through VUV-Light for the Surface Treatment of
+    Adhesive and Lacquer Processes.

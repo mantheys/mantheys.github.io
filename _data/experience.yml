@@ -1,0 +1,41 @@
+# Positions held, newest first.
+# `highlights` are rendered as bullet points; **bold** markers survive into LaTeX.
+responsibilities:
+  - Lead analyst of the CIEMAT apparatus for the VD **X-ARAPUCA Characterisation**.
+  - Software implementation of **Solar Neutrino Reconstruction** chain in LArSoft.
+
+positions:
+  - title: Scientific Researcher
+    organization: Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas
+    location: Madrid, Spain
+    dates: 2021 - 2025
+    highlights:
+      - Join professional membership of **DUNE**, **ProtoDUNE** & **SoLAr** experiments.
+      - Perform laboratory measurements of cryogenic **Liquid Argon Scintillation** light detection with photosensors.
+      - Develop **Monte-Carlo** simulations and reconstruction tools for **Low-Energy Neutrinos** analyses.
+      - Produce low-energy reconstruction and sensitivity analysis of **Solar Neutrinos**.
+      - Participate in **Outreach Program** for national secondary school.
+
+  - title: Visiting researcher at Duke University
+    organization: Duke University
+    location: Durham, USA
+    dates: Jul 2023 - Sep 2023
+    summary: Develop **Low-Energy Analysis Tools** in LArSoft for solar neutrino detection.
+
+  - title: Visiting research contract from ESA
+    organization: European Space Agency (ESA-ESAC)
+    location: Villafranca del Castillo, Spain
+    dates: Jul 2021 - Sep 2021
+    summary: "**Outreach** for scientific project (CesaR)."
+
+  - title: Research Under Academic Supervision (Grant)
+    organization: Ministry of Foreign Affairs and International Cooperation (MAECI)
+    location: Rome, Italy
+    dates: Jan 2020 - Jun 2020
+    summary: Detector science in the cryogenic laboratory for **Dark Matter R&D**.
+
+  - title: Student Researcher
+    organization: Fraunhofer Institute (IFAM)
+    location: Bremen, Germany
+    dates: Nov 2016 - May 2018
+    summary: Laboratory assistant in the department for **Adhesive Bonding and Plasma Technologies**.

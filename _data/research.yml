@@ -1,0 +1,75 @@
+# Long-form research narrative. Rendered on the Research page and as the
+# "Research Activities" section of the CV PDF.
+- label: Ph.D. RESEARCH
+  title: Deep Underground Neutrino Experiment
+  location: Madrid, Spain
+  dates: 2021 - 2025
+  paragraphs:
+    - >-
+      My research focuses on advancing the physics capabilities of the
+      **Deep Underground Neutrino Experiment** (DUNE) through both hardware
+      development and data analysis, with a particular emphasis on improving
+      low-energy neutrino detection. My work experience has led me to perform
+      cryogenic laboratory measurements on photosensitive devices, conduct Monte
+      Carlo simulations, and develop reconstruction algorithms for solar neutrinos.
+    - >-
+      A central component of my research has been the characterisation and
+      optimisation of **X-ARAPUCA** photon detectors. These devices are a critical
+      part of DUNE's **Photon Detection System** (PDS), responsible for capturing
+      scintillation light produced in DUNE. Because the performance of the PDS
+      directly affects event reconstruction, especially for low-energy interactions
+      such as solar neutrinos, it is essential to characterise its behaviour. My work
+      involves operating these devices in liquid nitrogen or liquid argon environments,
+      triggering on specific events, calibrating a light source and quantifying the
+      system's response. Through these studies, I have computed the expected
+      **Photon Detection Efficiency** for full-scale DUNE X-ARAPUCAs and provided
+      essential input for simulation tuning and detector optimisation. My results
+      have been published in [arXiv:2511.12328](https://arxiv.org/abs/2511.12328).
+    - >-
+      Bridging the hardware and physics-analysis components of my work, I have
+      contributed extensively to DUNE's **Monte Carlo** simulation framework,
+      focusing on the reconstruction of low-energy charge and scintillation signals.
+      My contributions include implementing waveform filtering and deconvolution
+      techniques, photon pulse reconstruction, event clustering and charge-light
+      matching for further downstream physics analyses. These efforts have been
+      incorporated into the broader **LArSoft Simulation** workflow. A major
+      scientific goal is the reconstruction and study of low-energy neutrinos from
+      the Sun. DUNE's unprecedented combination of mass and high cross-section will
+      allow it to perform precision measurements of the solar neutrino flux and probe
+      matter effects. My research contributes to this effort through the development
+      of vertex and energy reconstruction algorithms that combine scintillation and
+      ionisation signals, and studying event-topology features that distinguish
+      low-energy neutrino interactions from radiological backgrounds.
+    - >-
+      Using these tools, I have performed analyses aimed at quantifying DUNE's solar
+      neutrino significance, such as the **Day-Night Asymmetry**, the
+      **HEP Neutrino Discovery** and DUNE's **Sensitivity to Solar Oscillation**
+      parameters. My work also explores how improved photon detection translates into
+      better energy resolution and ultimately stronger physics reach. Results from
+      this work have been shared in
+      [doi:10.22323/1.476.0217](http://dx.doi.org/10.22323/1.476.0217).
+    - >-
+      In summary, my research integrates detector development, detailed simulation,
+      and physics analysis to enhance DUNE's ability to observe and characterise
+      low-energy neutrinos. By improving the performance and understanding of the
+      photon detection system, refining simulation tools, and advancing reconstruction
+      and oscillation analysis techniques, I aim to support DUNE's long-term goal of
+      delivering transformative neutrino physics.
+
+- label: MASTER RESEARCH
+  title: BullKid
+  location: Rome, Italy
+  dates: 2020 - 2021
+  paragraphs:
+    - >-
+      I contributed to the **BULky and Low-Threshold Kinetic Inductance Detectors**
+      (BULLKID) R&D project, focused on the development of cryogenic
+      **Kinetic Inductance Detectors** (KIDs) for the search of rare low-energy
+      processes such as **Low-Mass Dark Matter** and neutrino coherent scattering.
+      I participated in the lithographic design of these MKIDs, tuning their resonance
+      frequencies to achieve multiplexing capabilities. I also performed data quality
+      and noise performance studies on one of the project's first functional
+      prototypes. I produced exclusion curves for low-mass dark matter that could
+      potentially be achieved with a scaled version of this prototype. This work was
+      recognised through my poster presentation at the **Low Temperature Detectors**
+      conference.

@@ -1,0 +1,20 @@
+# Canonical personal data. Drives both the website header and the CV PDF header.
+#
+# This file is committed to a PUBLIC repository, so it holds nothing private.
+# Home address and phone number live in _data/private.yml, which is gitignored
+# and only read when you pass --private to tools/build_cv.py.
+# See _data/private.example.yml.
+name:
+  first: Sergio
+  last: Manthey Corchado
+position: Particle Physicist
+subtitle: Ph.D. Candidate
+institution: CIEMAT / Universidad Autónoma de Madrid
+email: sergio.manthey@proton.me
+github: mantheys
+linkedin: manthey-corchado
+orcid: 0000-0002-9368-9120
+inspire_bai: Sergio.Manthey.1
+google_scholar:
+  id: ""   # the user= value from your Scholar profile URL
+  short: S. Manthey Corchado  # name shown next to the icon in the CV header
