@@ -1,6 +1,19 @@
 # Selected code, shown on the Projects page in the order listed.
 # Each entry needs: name, description
 # Optional: repo, website, docs, paper, language, license, role
+- name: SNUfish
+  repo: https://github.com/mantheys/snufish
+  website: https://mantheys.github.io/snufish/
+  language: Python, JavaScript
+  license: MIT
+  description: >-
+    Community benchmarks of solar neutrino tools. Every tool computes the same
+    fixed problem, from standard solar models through MSW propagation in the Sun
+    and Earth to cross sections and event rates, and SNUfish validates the
+    outputs and plots them side by side with plotipus. A static web calculator
+    on the same engine gives spectra, day-night asymmetries and uncertainty
+    budgets for a chosen detector in the browser.
+
 - name: plotipus
   repo: https://github.com/mantheys/plotipus
   language: Python
