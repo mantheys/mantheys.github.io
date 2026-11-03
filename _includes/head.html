@@ -40,7 +40,8 @@
   {% endif %}
 
   <!-- Language: CSS shows only elements whose data-l matches <html data-lang>.
-       The saved choice (or the browser's language) is applied before paint. -->
+       The default language is used until the visitor picks another in the
+       selector; that choice is saved and applied before paint. -->
   {% assign langs = site.data.i18n.languages %}
   <style>
     {% for l in langs %}html[data-lang="{{ l.code }}"] [data-l]:not([data-l="{{ l.code }}"]){% unless forloop.last %},
@@ -51,15 +52,7 @@
       var codes = [{% for l in langs %}"{{ l.code }}"{% unless forloop.last %}, {% endunless %}{% endfor %}];
       var lang = null;
       try { lang = localStorage.getItem('lang'); } catch (e) {}
-      if (codes.indexOf(lang) < 0) {
-        lang = null;
-        var prefs = navigator.languages || [navigator.language || ''];
-        for (var i = 0; i < prefs.length && !lang; i++) {
-          var c = String(prefs[i]).toLowerCase().split('-')[0];
-          if (codes.indexOf(c) >= 0) lang = c;
-        }
-      }
-      lang = lang || codes[0];
+      if (codes.indexOf(lang) < 0) lang = codes[0];
       document.documentElement.setAttribute('data-lang', lang);
       document.documentElement.setAttribute('lang', lang);
     })();
