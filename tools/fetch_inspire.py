@@ -40,6 +40,16 @@ SURNAME = "Manthey"
 # and scholar.first_name in _config.yml for the name to be bolded.
 BIB_NAME = "Manthey Corchado, S."
 
+# INSPIRE records that mangle Spanish double surnames, mapped to the correct
+# "Initials Surname1 Surname2" form (written "Surname1 Surname2, Initials" in
+# BibTeX). Applied to every output, so the website and CV agree.
+AUTHOR_FIXES = {
+    "A. d. l. T. Rojo": "A. de la Torre Rojo",
+    "A. C. Villanueva": "A. Cervera Villanueva",
+    "A. Cervera": "A. Cervera Villanueva",
+    "A. V. de Osa": "A. Verdugo de Osa",
+}
+
 FIELDS = (
     "titles,authors,collaborations,publication_info,arxiv_eprints,dois,"
     "document_type,earliest_date,texkeys,report_numbers"
@@ -132,6 +142,7 @@ def parse(record: dict) -> dict:
 
     selected = len(authors) <= SELECTED_MAX_AUTHORS
     names = [initials(a["full_name"]) for a in authors]
+    names = [AUTHOR_FIXES.get(n, n) for n in names]
     # Lead author on the full INSPIRE list (not a collaboration byline).
     first_author = bool(names) and SURNAME in names[0]
     et_al = False
