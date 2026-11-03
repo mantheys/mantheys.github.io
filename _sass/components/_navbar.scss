@@ -2,7 +2,11 @@
 // Navbar — frosted glass, refined
 // =============================================================
 
+// Pinned to the top of the viewport on every page. Bootstrap's `.sticky-top`
+// helper is not compiled in (see assets/main.scss), so set it here.
 .navbar {
+  position: sticky;
+  top: 0;
   border-bottom: 1px solid var(--border-color);
   padding: var(--space-3) var(--space-4);
   transition: box-shadow var(--transition-base);
@@ -87,6 +91,36 @@
   }
 }
 
+// Language selector
+.lang-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  color: var(--text-muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  height: 2rem;
+  padding: 0 var(--space-3);
+  transition: all var(--transition-fast);
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent);
+    border-color: var(--accent);
+    background-color: var(--accent-light);
+  }
+
+  option {
+    color: var(--text-primary);
+    background-color: var(--bg-card);
+  }
+}
+
 // Mobile menu
 .navbar-toggler {
   border: 1px solid var(--border-color);
@@ -102,6 +136,9 @@
 
 @media (max-width: 767px) {
   .navbar-collapse {
+    // The bar stays pinned, so a tall open menu must scroll inside itself.
+    max-height: calc(100vh - 4.5rem);
+    overflow-y: auto;
     padding: var(--space-4) 0;
     border-top: 1px solid var(--border-color);
     margin-top: var(--space-3);

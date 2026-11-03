@@ -1,30 +1,44 @@
 # Academic education, newest first. Rendered on the About page and in the CV PDF.
 - degree: Ph.D. in Physics
+  degree_es: Doctorado en Física
+  degree_ca: Doctorat en Física
   institution: Universidad Autónoma de Madrid
   location: Madrid, Spain
   dates: 2021 - 2026
   short: "(2026) Ph.D. Physics, UAM Madrid"
+  short_es: "(2026) Doctorado en Física, UAM Madrid"
+  short_ca: "(2026) Doctorat en Física, UAM Madrid"
   thesis: >-
     Liquid Argon Detector Development for the Neutrino Oscillation Measurement
     with the DUNE experiment.
   # Shown in parentheses after the dates. Keep it short -- the thesis line is
   # already near the full text width. Add the date once the defence is scheduled.
   status: defence pending
+  status_es: defensa pendiente
+  status_ca: defensa pendent
 
 - degree: M.S. in Particle and Astroparticle Physics
+  degree_es: Máster en Física de Partículas y Astropartículas
+  degree_ca: Màster en Física de Partícules i Astropartícules
   institution: Università di Roma La Sapienza
   location: Rome, Italy
   dates: 2018 - 2021
   short: "(2021) M.S. Particle Physics, La Sapienza"
+  short_es: "(2021) Máster en Física de Partículas, La Sapienza"
+  short_ca: "(2021) Màster en Física de Partícules, La Sapienza"
   thesis: >-
     BULLKID. Low Mass Dark Matter Research with Microwave Kinetic Inductance
     Detectors (MKIDS).
 
 - degree: B.S. in Physics
+  degree_es: Grado en Física
+  degree_ca: Grau en Física
   institution: University of Bremen
   location: Bremen, Germany
   dates: 2014 - 2018
   short: "(2018) B.S. Physics, U. Bremen"
+  short_es: "(2018) Grado en Física, U. Bremen"
+  short_ca: "(2018) Grau en Física, U. Bremen"
   thesis: >-
     Oxygen-Radical Production through VUV-Light for the Surface Treatment of
     Adhesive and Lacquer Processes.

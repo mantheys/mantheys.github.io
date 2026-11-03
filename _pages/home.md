@@ -5,36 +5,35 @@ permalink: /
 ---
 
 <h1 class="home-hero">{{ site.name }}</h1>
-<p class="home-hero-sub">{{ site.title }} &middot; {{ site.institution }}</p>
+<p class="home-hero-sub">{% include t.html key="site_title" %} &middot; {{ site.institution }}</p>
 
 <div class="chip-container" markdown="0">
-<a href="{{ '/research' | relative_url }}" class="chip">Neutrino Oscillations</a>
-<a href="{{ '/research' | relative_url }}" class="chip">Solar Neutrinos</a>
-<a href="{{ '/research' | relative_url }}" class="chip">Liquid Argon TPCs</a>
-<a href="{{ '/research' | relative_url }}" class="chip">Photon Detection</a>
+<a href="{{ '/research' | relative_url }}" class="chip">{% include t.html key="chip_oscillations" %}</a>
+<a href="{{ '/research' | relative_url }}" class="chip">{% include t.html key="chip_solar" %}</a>
+<a href="{{ '/research' | relative_url }}" class="chip">{% include t.html key="chip_lartpc" %}</a>
+<a href="{{ '/research' | relative_url }}" class="chip">{% include t.html key="chip_pds" %}</a>
 <a href="{{ '/research' | relative_url }}" class="chip">X-ARAPUCA</a>
 <a href="{{ '/research' | relative_url }}" class="chip">DUNE</a>
 </div>
 
-I work on low-energy neutrino physics for the **Deep Underground Neutrino Experiment**
-(DUNE), spanning detector hardware and physics analysis. My work covers cryogenic
-characterisation of **X-ARAPUCA** photon detectors, Monte Carlo simulation and
-reconstruction of low-energy charge and scintillation signals in LArSoft, and
-sensitivity studies for **solar neutrinos** — the day–night asymmetry, HEP neutrino
-discovery potential, and DUNE's reach on the solar oscillation parameters.
+<div markdown="0">{% include t.html key="home_intro" md=true %}</div>
 
 <div class="callout callout-success" markdown="0">
-<div class="callout-title">{% include icon.html name="cv" class="callout-icon" %} Curriculum Vitae</div>
-<p>My CV is generated from the same data as this site and rebuilt on every commit.
-<a href="{{ '/assets/cv.pdf' | relative_url }}">Download the PDF &rarr;</a></p>
+<div class="callout-title">{% include icon.html name="cv" class="callout-icon" %} {% include t.html key="cv" %}</div>
+<p>{% include t.html key="cv_callout" %}
+<a href="{{ '/assets/cv.pdf' | relative_url }}">{% include t.html key="cv_download" %} &rarr;</a></p>
 </div>
 
-{% capture selected %}{% bibliography --query @*[selected=true] %}{% endcapture %}
-{% if selected contains "pub-entry" %}
-## Selected publications
+{% comment %}
+  Only papers where I am the lead author on the full INSPIRE author list.
+  tools/fetch_inspire.py sets `first_author = {true}` on those BibTeX entries.
+{% endcomment %}
+{% capture first_author %}{% bibliography --query @*[first_author=true] %}{% endcapture %}
+{% if first_author contains "pub-entry" %}
+<h2 id="first-author-publications">{% include t.html key="first_author_pubs" %}</h2>
 
 <div class="section-card selected-pubs" markdown="0">
-{{ selected }}
-<p style="margin: var(--space-4) 0 0;"><a href="{{ '/publications' | relative_url }}">All publications &rarr;</a></p>
+{{ first_author }}
+<p style="margin: var(--space-4) 0 0;"><a href="{{ '/publications' | relative_url }}">{% include t.html key="all_pubs" %} &rarr;</a></p>
 </div>
 {% endif %}

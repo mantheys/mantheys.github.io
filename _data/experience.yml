@@ -22,6 +22,8 @@ responsibilities:
 
 positions:
   - title: Scientific Researcher
+    title_es: "Investigador científico"
+    title_ca: "Investigador científic"
     organization: Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas
     location: Madrid, Spain
     dates: 2021 - 2025
@@ -33,24 +35,32 @@ positions:
       - Participate in **Outreach Program** for national secondary school.
 
   - title: Visiting researcher at Duke University
+    title_es: "Investigador visitante en la Universidad de Duke"
+    title_ca: "Investigador visitant a la Universitat de Duke"
     organization: Duke University
     location: Durham, USA
     dates: Jul 2023 - Sep 2023
     summary: Develop **Low-Energy Analysis Tools** in LArSoft for solar neutrino detection.
 
   - title: Visiting research contract from ESA
+    title_es: "Contrato de investigación visitante de la ESA"
+    title_ca: "Contracte de recerca visitant de l'ESA"
     organization: European Space Agency (ESA-ESAC)
     location: Villafranca del Castillo, Spain
     dates: Jul 2021 - Sep 2021
     summary: "**Outreach** for scientific project (CesaR)."
 
   - title: Research Under Academic Supervision (Grant)
+    title_es: "Investigación bajo supervisión académica (beca)"
+    title_ca: "Recerca sota supervisió acadèmica (beca)"
     organization: Ministry of Foreign Affairs and International Cooperation (MAECI)
     location: Rome, Italy
     dates: Jan 2020 - Jun 2020
     summary: Detector science in the cryogenic laboratory for **Dark Matter R&D**.
 
   - title: Student Researcher
+    title_es: "Estudiante investigador"
+    title_ca: "Estudiant investigador"
     organization: Fraunhofer Institute (IFAM)
     location: Bremen, Germany
     dates: Nov 2016 - May 2018

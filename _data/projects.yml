@@ -13,6 +13,22 @@
     outputs and plots them side by side with plotipus. A static web calculator
     on the same engine gives spectra, day-night asymmetries and uncertainty
     budgets for a chosen detector in the browser.
+  description_es: >-
+    Comparativas comunitarias de herramientas de neutrinos solares. Todas las
+    herramientas calculan el mismo problema fijo, desde los modelos solares estándar
+    y la propagación MSW en el Sol y la Tierra hasta las secciones eficaces y las
+    tasas de sucesos, y SNUfish valida los resultados y los representa juntos con
+    plotipus. Una calculadora web estática sobre el mismo motor ofrece espectros,
+    asimetrías día-noche y presupuestos de incertidumbre para un detector elegido,
+    directamente en el navegador.
+  description_ca: >-
+    Comparatives comunitàries d'eines de neutrins solars. Totes les eines calculen
+    el mateix problema fix, des dels models solars estàndard i la propagació MSW al
+    Sol i la Terra fins a les seccions eficaces i les taxes d'esdeveniments, i
+    SNUfish en valida els resultats i els representa junts amb plotipus. Una
+    calculadora web estàtica sobre el mateix motor ofereix espectres, asimetries
+    dia-nit i pressupostos d'incertesa per a un detector triat, directament al
+    navegador.
 
 - name: plotipus
   repo: https://github.com/mantheys/plotipus
@@ -23,10 +39,28 @@
     text command lists. Keeps figure definitions in version control alongside the
     analysis rather than in one-off scripts, so a paper's figures can be
     regenerated from a single command file.
+  description_es: >-
+    Gráficas y tablas para publicaciones a partir de DataFrames de pandas
+    serializados, guiadas por listas de comandos en texto plano. Mantiene la
+    definición de las figuras bajo control de versiones junto al análisis, en lugar
+    de en scripts sueltos, de modo que las figuras de un artículo se pueden
+    regenerar con un único archivo de comandos.
+  description_ca: >-
+    Gràfics i taules per a publicacions a partir de DataFrames de pandas
+    serialitzats, guiats per llistes d'ordres en text pla. Manté la definició de
+    les figures sota control de versions al costat de l'anàlisi, en lloc de en
+    scripts solts, de manera que les figures d'un article es poden regenerar amb un
+    únic fitxer d'ordres.
 
 - name: cathersis
   repo: https://github.com/mantheys/cathersis
   language: TeX
   description: >-
     LaTeX sources for my Ph.D. thesis, *Liquid Argon Detector Development for the
+    Neutrino Oscillation Measurement with the DUNE experiment*.
+  description_es: >-
+    Fuentes LaTeX de mi tesis doctoral, *Liquid Argon Detector Development for the
+    Neutrino Oscillation Measurement with the DUNE experiment*.
+  description_ca: >-
+    Fonts LaTeX de la meva tesi doctoral, *Liquid Argon Detector Development for the
     Neutrino Oscillation Measurement with the DUNE experiment*.

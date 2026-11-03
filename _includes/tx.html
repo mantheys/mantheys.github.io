@@ -1,0 +1,10 @@
+{%- comment -%}
+  Free text (dates, places) in every site language, translated by the
+  substitution lists under `replace:` in _data/i18n.yml.
+    {% include tx.html text=talk.location %}
+{%- endcomment -%}
+{%- for _l in site.data.i18n.languages -%}
+{%- assign _v = include.text | append: "" -%}
+{%- for _p in site.data.i18n.replace[_l.code] -%}{%- assign _v = _v | replace: _p[0], _p[1] -%}{%- endfor -%}
+<span data-l="{{ _l.code }}" lang="{{ _l.code }}">{{ _v }}</span>
+{%- endfor -%}

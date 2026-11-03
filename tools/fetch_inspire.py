@@ -108,6 +108,8 @@ def parse(record: dict) -> dict:
 
     selected = len(authors) <= SELECTED_MAX_AUTHORS
     names = [initials(a["full_name"]) for a in authors]
+    # Lead author on the full INSPIRE list (not a collaboration byline).
+    first_author = bool(names) and SURNAME in names[0]
     et_al = False
 
     if not selected:
@@ -154,6 +156,7 @@ def parse(record: dict) -> dict:
         "doi": doi,
         "arxiv": eprint,
         "selected": selected,
+        "first_author": first_author,
     }
 
 
@@ -182,6 +185,9 @@ def to_bibtex(pub: dict) -> str:
     fields.append(("url", f"https://inspirehep.net/literature/{pub['recid']}"))
     if pub["selected"]:
         fields.append(("selected", "true"))
+    if pub["first_author"]:
+        # The home page lists only these.
+        fields.append(("first_author", "true"))
 
     body = ",\n".join(f"  {k} = {{{v}}}" if not v.startswith("{") else f"  {k} = {v}"
                       for k, v in fields)

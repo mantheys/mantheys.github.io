@@ -1,0 +1,14 @@
+{%- comment -%}
+  Interface string in every site language; CSS shows only the active one.
+    {% include t.html key="research" %}            inline (span)
+    {% include t.html key="home_intro" md=true %}  Markdown block (div)
+  Optional `sub` / `with`: replace the placeholder `sub` by `with` (for URLs).
+{%- endcomment -%}
+{%- assign _s = site.data.i18n.strings[include.key] -%}
+{%- assign _def = site.data.i18n.languages.first.code -%}
+{%- for _l in site.data.i18n.languages -%}
+{%- assign _v = _s[_l.code] | default: _s[_def] | default: include.key -%}
+{%- if include.sub -%}{%- assign _v = _v | replace: include.sub, include.with -%}{%- endif -%}
+{%- if include.md -%}<div data-l="{{ _l.code }}" lang="{{ _l.code }}">{{ _v | markdownify }}</div>
+{%- else -%}<span data-l="{{ _l.code }}" lang="{{ _l.code }}">{{ _v }}</span>{%- endif -%}
+{%- endfor -%}

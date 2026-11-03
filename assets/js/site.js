@@ -34,6 +34,36 @@
     });
   }
 
+  // ----- Language -----
+  // head.html sets <html data-lang> before paint; CSS hides every [data-l]
+  // element of another language. Here: the selector, and attributes
+  // (placeholders, aria-labels) that CSS cannot swap.
+
+  function currentLang() {
+    return document.documentElement.getAttribute('data-lang') || 'en';
+  }
+
+  function applyLangAttrs(lang) {
+    document.querySelectorAll('[data-i18n-attr]').forEach(function (el) {
+      var value = el.getAttribute('data-i18n-' + lang);
+      if (value !== null) el.setAttribute(el.getAttribute('data-i18n-attr'), value);
+    });
+  }
+
+  function setLang(lang) {
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
+    try { localStorage.setItem('lang', lang); } catch (e) {}
+    applyLangAttrs(lang);
+  }
+
+  var langSelect = document.getElementById('langSelect');
+  if (langSelect) {
+    langSelect.value = currentLang();
+    langSelect.addEventListener('change', function () { setLang(this.value); });
+  }
+  applyLangAttrs(currentLang());
+
   // ----- Dark Mode Toggle -----
 
   var toggle = document.getElementById('darkModeToggle');
@@ -232,6 +262,12 @@
   // stores site.baseurl on <body> so the index can be fetched from the right place.
   var baseurl = (document.body && document.body.getAttribute('data-baseurl')) || '';
 
+  // Localised messages live on #searchResults as data-<name>-<lang>.
+  function searchMsg(name) {
+    return (searchResultsEl && (searchResultsEl.getAttribute('data-' + name + '-' + currentLang()) ||
+            searchResultsEl.getAttribute('data-' + name + '-en'))) || '';
+  }
+
   function loadSearchData(callback) {
     if (searchData) { callback(searchData); return; }
     fetch(baseurl + '/assets/search.json')
@@ -241,7 +277,7 @@
         callback(data);
       })
       .catch(function () {
-        searchResultsEl.innerHTML = '<div class="search-no-results">Could not load search index.</div>';
+        searchResultsEl.innerHTML = '<div class="search-no-results">' + searchMsg('error') + '</div>';
       });
   }
 
@@ -257,7 +293,7 @@
     });
 
     if (matches.length === 0) {
-      searchResultsEl.innerHTML = '<div class="search-no-results">No results for "' + query + '"</div>';
+      searchResultsEl.innerHTML = '<div class="search-no-results">' + searchMsg('none') + '</div>';
       return;
     }
 

@@ -4,13 +4,13 @@ layout: page
 permalink: /about/
 ---
 
-# About
+# {% include t.html key="about" %}
 
 <div class="section-card">
 <div class="pi-card">
 <div>
 <h2 class="pi-name">{{ site.name }}</h2>
-<p style="font-style: italic; color: var(--text-secondary);">{{ site.title }}, {{ site.institution }}</p>
+<p style="font-style: italic; color: var(--text-secondary);">{% include t.html key="site_title" %}, {{ site.institution }}</p>
 <div class="pi-links">
 {% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email" aria-label="Email">{% include icon.html name="envelope" %}</a>{% endif %}
 {% if site.links.cv != "" %}<a href="{{ site.links.cv | prepend: '/' | relative_url }}" class="icon-link" title="CV" aria-label="CV">{% include icon.html name="cv" %}</a>{% endif %}
@@ -26,29 +26,29 @@ ORCID <a href="{{ site.links.orcid }}">0000-0002-9368-9120</a> &middot;
 </div>
 
 <div class="section-card">
-<h3>Education</h3>
+<h3>{% include t.html key="education" %}</h3>
 <ul>
 {% for e in site.data.education %}
-<li><strong>{{ e.degree }}</strong>, {{ e.institution }}, {{ e.location }} ({{ e.dates }}{% if e.status %}, {{ e.status }}{% endif %})<br>
-<span style="color: var(--text-secondary);">Thesis: {{ e.thesis }}</span></li>
+<li><strong>{% include tf.html obj=e field="degree" %}</strong>, {{ e.institution }}, {% include tx.html text=e.location %} ({{ e.dates }}{% if e.status %}, {% include tf.html obj=e field="status" %}{% endif %})<br>
+<span style="color: var(--text-secondary);">{% include t.html key="thesis" %}: {{ e.thesis }}</span></li>
 {% endfor %}
 </ul>
 </div>
 
 <div class="section-card">
-<h3>Positions</h3>
+<h3>{% include t.html key="positions" %}</h3>
 <ul>
 {% for p in site.data.experience.positions %}
-<li><strong>{{ p.title }}</strong>, {{ p.organization }}, {{ p.location }} ({{ p.dates }})</li>
+<li><strong>{% include tf.html obj=p field="title" %}</strong>, {{ p.organization }}, {% include tx.html text=p.location %} ({% include tx.html text=p.dates %})</li>
 {% endfor %}
 </ul>
 </div>
 
 <div class="section-card">
-<h3>Languages</h3>
+<h3>{% include t.html key="languages" %}</h3>
 <ul>
 {% for l in site.data.skills.languages %}
-<li><strong>{{ l.name }}</strong> — {{ l.level }}</li>
+<li><strong>{% include tf.html obj=l field="name" %}</strong> — {% include tf.html obj=l field="level" %}</li>
 {% endfor %}
 </ul>
 </div>

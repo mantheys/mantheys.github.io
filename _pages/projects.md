@@ -4,10 +4,9 @@ layout: page
 permalink: /projects/
 ---
 
-# Projects
+# {% include t.html key="projects" %}
 
-A few things I maintain in the open. Everything else is on
-[GitHub]({{ site.links.github }}).
+<div markdown="0">{% include t.html key="projects_intro" md=true sub="GITHUB" with=site.links.github %}</div>
 
 {% for project in site.data.projects %}
 <div class="section-card" markdown="0">
@@ -27,7 +26,7 @@ A few things I maintain in the open. Everything else is on
 {% if project.role %} &middot; {{ project.role }}{% endif %}
 </p>
 {% endif %}
-{{ project.description | markdownify }}
+{% include tf.html obj=project field="description" md=true %}
 </div>
 {% endfor %}
 

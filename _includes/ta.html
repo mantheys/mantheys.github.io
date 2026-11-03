@@ -1,0 +1,9 @@
+{%- comment -%}
+  Translated attribute: emits the attribute in the default language plus one
+  data-i18n-<code> per language, which assets/js/site.js swaps in.
+    <input {% include ta.html attr="placeholder" key="pubs_filter" %}>
+{%- endcomment -%}
+{%- assign _s = site.data.i18n.strings[include.key] -%}
+{%- assign _def = site.data.i18n.languages.first.code -%}
+{{ include.attr }}="{{ _s[_def] | escape }}" data-i18n-attr="{{ include.attr }}"
+{%- for _l in site.data.i18n.languages %} data-i18n-{{ _l.code }}="{{ _s[_l.code] | default: _s[_def] | escape }}"{% endfor -%}
