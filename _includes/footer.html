@@ -31,4 +31,5 @@
   </div>
 </footer>
 
-<script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+{%- comment -%} ?v= changes on every build, so no browser keeps running an old copy. {%- endcomment -%}
+<script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

@@ -57,12 +57,32 @@
     applyLangAttrs(lang);
   }
 
-  var langSelect = document.getElementById('langSelect');
-  if (langSelect) {
-    langSelect.value = currentLang();
-    langSelect.addEventListener('change', function () { setLang(this.value); });
+  function savedLang() {
+    try { return localStorage.getItem('lang'); } catch (e) { return null; }
   }
-  applyLangAttrs(currentLang());
+
+  var langSelect = document.getElementById('langSelect');
+
+  // Make the page, the selector and the saved choice agree. Firefox can
+  // restore a <select> to a stale option (reload, session restore), and a
+  // page restored from the back-forward cache keeps the language it had
+  // when it was left, even if another page has since changed it.
+  function syncLang() {
+    var lang = savedLang();
+    if (lang && langSelect && langSelect.querySelector('option[value="' + lang + '"]')) {
+      if (lang !== currentLang()) setLang(lang);
+    }
+    if (langSelect) langSelect.value = currentLang();
+    applyLangAttrs(currentLang());
+  }
+
+  if (langSelect) {
+    // 'input' as well as 'change': both fire on selection; setLang is idempotent.
+    langSelect.addEventListener('change', function () { setLang(this.value); });
+    langSelect.addEventListener('input', function () { setLang(this.value); });
+  }
+  syncLang();
+  window.addEventListener('pageshow', function (e) { if (e.persisted) syncLang(); });
 
   // ----- Dark Mode Toggle -----
 

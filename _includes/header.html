@@ -7,7 +7,7 @@
     {% comment %}Outside the collapsed menu so it is visible on phones too;
        on wider screens CSS moves it to the right end of the bar.{% endcomment %}
     {% if site.data.i18n.languages.size > 1 %}
-    <select class="lang-select" id="langSelect" {% include ta.html attr="aria-label" key="language" %}>
+    <select class="lang-select" id="langSelect" autocomplete="off" {% include ta.html attr="aria-label" key="language" %}>
       {% for l in site.data.i18n.languages %}<option value="{{ l.code }}" lang="{{ l.code }}" title="{{ l.name }}">{{ l.short | default: l.code | upcase }}</option>{% endfor %}
     </select>
     {% endif %}
