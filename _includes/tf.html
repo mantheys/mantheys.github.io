@@ -1,0 +1,28 @@
+{%- comment -%}
+  A data-file field in every site language.
+    {% include tf.html obj=project field="description" md=true %}
+  Reads `<field>_<code>` (e.g. description_es) and falls back to `<field>`.
+  With no translations at all, emits the field once with no wrapper.
+  `tx=true` also runs the date/place substitutions of _includes/tx.html.
+{%- endcomment -%}
+{%- assign _base = include.obj[include.field] -%}
+{%- assign _any = false -%}
+{%- for _l in site.data.i18n.languages offset: 1 -%}
+{%- capture _k %}{{ include.field }}_{{ _l.code }}{% endcapture -%}
+{%- if include.obj[_k] -%}{%- assign _any = true -%}{%- endif -%}
+{%- endfor -%}
+{%- if _any == false and include.tx -%}{%- assign _any = true -%}{%- endif -%}
+{%- if _any == false -%}
+{%- if include.md -%}{{ _base | markdownify }}{%- else -%}{{ _base }}{%- endif -%}
+{%- else -%}
+{%- for _l in site.data.i18n.languages -%}
+{%- capture _k %}{{ include.field }}_{{ _l.code }}{% endcapture -%}
+{%- assign _v = include.obj[_k] | default: _base -%}
+{%- if include.tx and include.obj[_k] == nil -%}
+{%- assign _pairs = site.data.i18n.replace[_l.code] -%}
+{%- for _p in _pairs -%}{%- assign _v = _v | replace: _p[0], _p[1] -%}{%- endfor -%}
+{%- endif -%}
+{%- if include.md -%}<div data-l="{{ _l.code }}" lang="{{ _l.code }}">{{ _v | markdownify }}</div>
+{%- else -%}<span data-l="{{ _l.code }}" lang="{{ _l.code }}">{{ _v }}</span>{%- endif -%}
+{%- endfor -%}
+{%- endif -%}

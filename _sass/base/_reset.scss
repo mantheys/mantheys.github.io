@@ -4,6 +4,8 @@
 
 html {
   scroll-behavior: smooth;
+  // Keep in-page anchor targets clear of the pinned navbar.
+  scroll-padding-top: 5rem;
 
   // Custom scrollbar — thin, accent-tinted
   &::-webkit-scrollbar {

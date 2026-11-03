@@ -30,6 +30,7 @@ selected:
   doi: 10.1088/1748-0221/21/04/P04037
   arxiv: '2512.10790'
   selected: true
+  first_author: false
 - key: SoLAr:2025dck
   recid: '3092166'
   bibtype: article
@@ -60,6 +61,7 @@ selected:
   doi: 10.1088/1748-0221/21/04/P04008
   arxiv: '2512.10830'
   selected: true
+  first_author: false
 - key: Acerbi:2025lwy
   recid: '3085913'
   bibtype: article
@@ -89,6 +91,7 @@ selected:
   doi: 10.1088/1748-0221/21/02/P02047
   arxiv: '2511.19095'
   selected: true
+  first_author: false
 - key: Botogoske:2025sxz
   recid: '3083973'
   bibtype: article
@@ -102,7 +105,7 @@ selected:
   - N. Canci
   - A. Canto
   - C. Cattadori
-  - A. C. Villanueva
+  - A. Cervera Villanueva
   - S. Coleman
   - J. Crespo-Anadón
   - C. Cuesta
@@ -119,6 +122,7 @@ selected:
   doi: 10.1140/epjc/s10052-026-16190-1
   arxiv: '2511.12328'
   selected: true
+  first_author: false
 - key: MantheyCorchado:2025ist
   recid: '2877655'
   bibtype: inproceedings
@@ -138,6 +142,7 @@ selected:
   doi: 10.1088/1748-0221/20/04/C04033
   arxiv: '2502.05042'
   selected: true
+  first_author: true
 - key: MantheyCorchado:2024nao
   recid: '2839345'
   bibtype: inproceedings
@@ -156,6 +161,7 @@ selected:
   doi: 10.22323/1.476.0217
   arxiv: '2410.08251'
   selected: true
+  first_author: true
 - key: SoLAr:2024fwt
   recid: '2800590'
   bibtype: article
@@ -185,6 +191,7 @@ selected:
   doi: 10.1088/1748-0221/19/11/P11010
   arxiv: '2406.14121'
   selected: true
+  first_author: false
 - key: Alvarez-Garrote:2024bvd
   recid: '2788186'
   bibtype: article
@@ -215,6 +222,7 @@ selected:
   doi: 10.1140/epjc/s10052-024-13393-2
   arxiv: '2405.12014'
   selected: true
+  first_author: false
 - key: Alvarez-Garrote:2024byb
   recid: '2755056'
   bibtype: article
@@ -225,13 +233,13 @@ selected:
   - A. Canto
   - J. I. Crespo-Anadón
   - C. Cuesta
-  - A. d. l. T. Rojo
+  - A. de la Torre Rojo
   - I. Gil-Botella
   - S. Manthey Corchado
   - I. Martín
   - C. Palomares
   - L. Pérez-Molina
-  - A. V. de Osa
+  - A. Verdugo de Osa
   et_al: false
   n_authors: 12
   collaboration: null
@@ -244,6 +252,7 @@ selected:
   doi: 10.1016/j.nima.2024.169347
   arxiv: '2402.01584'
   selected: true
+  first_author: false
 - key: Andreotti:2024blh
   recid: '2749863'
   bibtype: article
@@ -259,7 +268,7 @@ selected:
   - D. Casazza
   - C. Cattadori
   - E. Calvo
-  - A. Cervera
+  - A. Cervera Villanueva
   - S. Manthey
   et_al: true
   n_authors: 85
@@ -273,6 +282,7 @@ selected:
   doi: 10.1088/1748-0221/19/01/T01007
   arxiv: null
   selected: true
+  first_author: false
 - key: Parsa:2022mnj
   recid: '2052409'
   bibtype: unpublished
@@ -302,6 +312,7 @@ selected:
   doi: null
   arxiv: '2203.07501'
   selected: true
+  first_author: false
 collaboration:
 - key: DUNE:2026aaw
   recid: '3187793'
@@ -321,6 +332,7 @@ collaboration:
   doi: null
   arxiv: '2608.04059'
   selected: false
+  first_author: false
 - key: DUNE:2026mze
   recid: '3181488'
   bibtype: unpublished
@@ -339,6 +351,7 @@ collaboration:
   doi: null
   arxiv: '2607.15927'
   selected: false
+  first_author: false
 - key: DUNE:2026yfe
   recid: '3149268'
   bibtype: article
@@ -358,6 +371,7 @@ collaboration:
   doi: 10.1088/1748-0221/21/08/P08018
   arxiv: '2604.23966'
   selected: false
+  first_author: false
 - key: DUNE:2026yly
   recid: '3100169'
   bibtype: article
@@ -376,6 +390,7 @@ collaboration:
   doi: 10.1140/epjc/s10052-026-15911-w
   arxiv: '2601.05697'
   selected: false
+  first_author: false
 - key: DUNE:2025zhx
   recid: '3084014'
   bibtype: article
@@ -394,6 +409,7 @@ collaboration:
   doi: 10.1103/nm5s-4cnw
   arxiv: '2511.13462'
   selected: false
+  first_author: false
 - key: DUNE:2025pda
   recid: '3083930'
   bibtype: unpublished
@@ -413,6 +429,7 @@ collaboration:
   doi: null
   arxiv: '2511.11925'
   selected: false
+  first_author: false
 - key: DUNE:2025dec
   recid: '3065819'
   bibtype: article
@@ -431,6 +448,7 @@ collaboration:
   doi: 10.1103/q21l-pl7s
   arxiv: '2510.08380'
   selected: false
+  first_author: false
 - key: DUNE:2025lvs
   recid: '2968033'
   bibtype: article
@@ -450,6 +468,7 @@ collaboration:
   doi: 10.1103/y9tz-sgcs
   arxiv: '2509.07664'
   selected: false
+  first_author: false
 - key: DUNE:2025zsi
   recid: '2968022'
   bibtype: article
@@ -468,6 +487,7 @@ collaboration:
   doi: 10.3390/instruments10010018
   arxiv: '2509.07012'
   selected: false
+  first_author: false
 - key: DUNE:2025wjg
   recid: '2944869'
   bibtype: article
@@ -486,6 +506,7 @@ collaboration:
   doi: 10.1088/1748-0221/20/09/P09008
   arxiv: '2507.08586'
   selected: false
+  first_author: false
 - key: DUNE:2025ypd
   recid: '2906139'
   bibtype: unpublished
@@ -504,6 +525,7 @@ collaboration:
   doi: null
   arxiv: '2503.23744'
   selected: false
+  first_author: false
 - key: DUNE:2025xpk
   recid: '2906174'
   bibtype: unpublished
@@ -522,6 +544,7 @@ collaboration:
   doi: null
   arxiv: '2503.23743'
   selected: false
+  first_author: false
 - key: DUNE:2025sjq
   recid: '2906097'
   bibtype: unpublished
@@ -540,6 +563,7 @@ collaboration:
   doi: null
   arxiv: '2503.23291'
   selected: false
+  first_author: false
 - key: DUNE:2025gyl
   recid: '2906301'
   bibtype: unpublished
@@ -558,6 +582,7 @@ collaboration:
   doi: null
   arxiv: '2503.23293'
   selected: false
+  first_author: false
 - key: DUNE:2025wti
   recid: '2878306'
   bibtype: article
@@ -576,6 +601,7 @@ collaboration:
   doi: 10.1140/epjc/s10052-025-14313-8
   arxiv: '2502.06637'
   selected: false
+  first_author: false
 - key: DUNE:2024tdb
   recid: '2839214'
   bibtype: article
@@ -595,6 +621,7 @@ collaboration:
   doi: 10.1088/1748-0221/20/02/P02021
   arxiv: '2409.18288'
   selected: false
+  first_author: false
 - key: DUNE:2024wvj
   recid: '2821221'
   bibtype: article
@@ -613,6 +640,7 @@ collaboration:
   doi: 10.1088/1748-0221/19/12/P12005
   arxiv: '2408.12725'
   selected: false
+  first_author: false
 - key: DUNE:2024qgl
   recid: '2813918'
   bibtype: article
@@ -632,6 +660,7 @@ collaboration:
   doi: 10.1103/PhysRevD.110.092011
   arxiv: '2408.00582'
   selected: false
+  first_author: false
 - key: DUNE:2024ptd
   recid: '2809124'
   bibtype: article
@@ -650,6 +679,7 @@ collaboration:
   doi: 10.1103/PhysRevD.111.092006
   arxiv: '2407.10339'
   selected: false
+  first_author: false
 - key: DUNE:2024fjn
   recid: '2768001'
   bibtype: article
@@ -668,6 +698,7 @@ collaboration:
   doi: 10.3390/instruments8030041
   arxiv: '2403.03212'
   selected: false
+  first_author: false
 - key: DUNE:2024dge
   recid: '2755125'
   bibtype: article
@@ -686,6 +717,7 @@ collaboration:
   doi: 10.1088/1748-0221/19/08/P08005
   arxiv: '2402.01568'
   selected: false
+  first_author: false
 - key: DUNE:2023nqi
   recid: '2734573'
   bibtype: article
@@ -704,6 +736,7 @@ collaboration:
   doi: 10.1088/1748-0221/19/08/T08004
   arxiv: '2312.03130'
   selected: false
+  first_author: false
 - key: DUNE:2023rtr
   recid: '2648777'
   bibtype: article
@@ -723,6 +756,7 @@ collaboration:
   doi: 10.1103/PhysRevD.107.112012
   arxiv: '2303.17007'
   selected: false
+  first_author: false
 - key: Caratelli:2022llt
   recid: '2043497'
   bibtype: unpublished
@@ -741,3 +775,4 @@ collaboration:
   doi: 10.2172/1861356
   arxiv: '2203.00740'
   selected: false
+  first_author: false

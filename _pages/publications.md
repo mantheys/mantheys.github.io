@@ -4,23 +4,22 @@ layout: page
 permalink: /publications/
 ---
 
-# Publications
+# {% include t.html key="publications" %}
 
-Generated from my [INSPIRE-HEP record]({{ site.links.inspire }}) by
-`tools/fetch_inspire.py` and refreshed weekly.
+<div markdown="0">{% include t.html key="pubs_intro" md=true sub="INSPIRE" with=site.links.inspire %}</div>
 
-<input type="text" class="pub-search" id="pubSearch" placeholder="Filter by title, author, or year...">
+<input type="text" class="pub-search" id="pubSearch" {% include ta.html attr="placeholder" key="pubs_filter" %}>
 
 <div class="section-card" id="pubList">
-<h2>Preprints</h2>
+<h2>{% include t.html key="preprints" %}</h2>
 
 {% bibliography --query @unpublished %}
 
-<h2>Journal Articles</h2>
+<h2>{% include t.html key="articles" %}</h2>
 
 {% bibliography --query @article %}
 
-<h2>Conference Proceedings</h2>
+<h2>{% include t.html key="proceedings" %}</h2>
 
 {% bibliography --query @inproceedings %}
 </div>

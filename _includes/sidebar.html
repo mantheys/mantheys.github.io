@@ -3,7 +3,7 @@
 <img src="{{ site.photo | prepend: '/images/' | relative_url }}" class="profile-photo" alt="{{ site.name }}" width="140" height="140" fetchpriority="high">
 </a>
 <p class="profile-name">{{ site.name }}</p>
-<p class="profile-title">{{ site.title }}</p>
+<p class="profile-title">{% include t.html key="site_title" %}</p>
 <p class="profile-institution">{{ site.institution }}</p>
 <div class="profile-links">
 {% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email" aria-label="Email">{% include icon.html name="envelope" %}</a>{% endif %}
@@ -18,15 +18,14 @@
 {% if site.data.education %}
 <ul style="text-align: left; margin-top: var(--space-4); list-style: none; padding-left: 0;">
 {% for e in site.data.education %}{% if e.short %}
-<li style="font-size: 0.875rem; color: var(--text-secondary); padding: var(--space-1) 0;">{{ e.short | replace: "-","&#8211;" }}</li>
+<li style="font-size: 0.875rem; color: var(--text-secondary); padding: var(--space-1) 0;">{% include tf.html obj=e field="short" %}</li>
 {% endif %}{% endfor %}
 </ul>
 {% endif %}
 </div>
 
 <div class="section-card" style="margin-top: var(--space-6);">
-<h2 style="margin-top: 0; font-size: 1.125rem;">Curriculum Vitae</h2>
-<p style="font-size: 0.875rem; color: var(--text-secondary);">Generated from this
-site's own data and rebuilt on every commit.</p>
-<p><a href="{{ '/assets/cv.pdf' | relative_url }}">Download the PDF &rarr;</a></p>
+<h2 style="margin-top: 0; font-size: 1.125rem;">{% include t.html key="cv" %}</h2>
+<p style="font-size: 0.875rem; color: var(--text-secondary);">{% include t.html key="cv_sidebar" %}</p>
+<p><a href="{{ '/assets/cv.pdf' | relative_url }}">{% include t.html key="cv_download" %} &rarr;</a></p>
 </div>

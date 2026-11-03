@@ -35,6 +35,21 @@ SELECTED_MAX_LISTED = 12
 # Your surname, used to bold your name and to keep it inside a truncated list.
 SURNAME = "Manthey"
 
+# How your name is written in the BibTeX for the website, whatever variant an
+# INSPIRE record uses ("S. Manthey" on some papers). Must match scholar.last_name
+# and scholar.first_name in _config.yml for the name to be bolded.
+BIB_NAME = "Manthey Corchado, S."
+
+# INSPIRE records that mangle Spanish double surnames, mapped to the correct
+# "Initials Surname1 Surname2" form (written "Surname1 Surname2, Initials" in
+# BibTeX). Applied to every output, so the website and CV agree.
+AUTHOR_FIXES = {
+    "A. d. l. T. Rojo": "A. de la Torre Rojo",
+    "A. C. Villanueva": "A. Cervera Villanueva",
+    "A. Cervera": "A. Cervera Villanueva",
+    "A. V. de Osa": "A. Verdugo de Osa",
+}
+
 FIELDS = (
     "titles,authors,collaborations,publication_info,arxiv_eprints,dois,"
     "document_type,earliest_date,texkeys,report_numbers"
@@ -73,6 +88,25 @@ def initials(full_name: str) -> str:
     return f"{given} {last}".strip()
 
 
+def bib_name(name: str) -> str:
+    """'S. Manthey Corchado' -> 'Manthey Corchado, S.' for BibTeX.
+
+    BibTeX reads "First Last" as a single-word surname, so a compound surname
+    such as "Manthey Corchado" would render as "Corchado, S. M.". The
+    "Last, First" form is unambiguous. Names without leading initials
+    (e.g. "DUNE Collaboration") are braced so they are kept verbatim.
+    """
+    if SURNAME in name.split():
+        return BIB_NAME
+    words = name.split()
+    given = []
+    while words[:-1] and words[0].endswith("."):
+        given.append(words.pop(0))
+    if not given:
+        return "{" + name + "}"
+    return f"{' '.join(words)}, {' '.join(given)}"
+
+
 def tex_escape(text: str) -> str:
     """Escape the characters that actually show up in INSPIRE titles."""
     for char in ("&", "%", "#", "_"):
@@ -108,6 +142,9 @@ def parse(record: dict) -> dict:
 
     selected = len(authors) <= SELECTED_MAX_AUTHORS
     names = [initials(a["full_name"]) for a in authors]
+    names = [AUTHOR_FIXES.get(n, n) for n in names]
+    # Lead author on the full INSPIRE list (not a collaboration byline).
+    first_author = bool(names) and SURNAME in names[0]
     et_al = False
 
     if not selected:
@@ -154,6 +191,7 @@ def parse(record: dict) -> dict:
         "doi": doi,
         "arxiv": eprint,
         "selected": selected,
+        "first_author": first_author,
     }
 
 
@@ -161,8 +199,10 @@ def to_bibtex(pub: dict) -> str:
     """Render one entry for jekyll-scholar."""
     fields: list[tuple[str, str]] = [
         ("title", "{" + tex_escape(pub["title"]) + "}"),
-        ("author", tex_escape(" and ".join(pub["authors"]))
-                   + (" and others" if pub["et_al"] else "")),
+        # Always braced: a lone "{DUNE Collaboration}" would otherwise lose
+        # its group braces in the writer below.
+        ("author", "{" + tex_escape(" and ".join(bib_name(n) for n in pub["authors"]))
+                   + (" and others" if pub["et_al"] else "") + "}"),
     ]
     if pub["collaboration"]:
         fields.append(("collaboration", pub["collaboration"]))
@@ -182,6 +222,9 @@ def to_bibtex(pub: dict) -> str:
     fields.append(("url", f"https://inspirehep.net/literature/{pub['recid']}"))
     if pub["selected"]:
         fields.append(("selected", "true"))
+    if pub["first_author"]:
+        # The home page lists only these.
+        fields.append(("first_author", "true"))
 
     body = ",\n".join(f"  {k} = {{{v}}}" if not v.startswith("{") else f"  {k} = {v}"
                       for k, v in fields)

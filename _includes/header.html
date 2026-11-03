@@ -11,20 +11,25 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+          <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">{% include t.html key="nav_home" %}</a>
         </li>
         {% for nav in site.nav_pages %}
         <li class="nav-item">
-          <a class="nav-link{% if page.url contains nav.name %} active{% endif %}" href="{{ nav.name | prepend: '/' | relative_url }}">{% if nav.label %}{{ nav.label }}{% else %}{{ nav.name | capitalize }}{% endif %}</a>
+          <a class="nav-link{% if page.url contains nav.name %} active{% endif %}" href="{{ nav.name | prepend: '/' | relative_url }}">{% capture nav_key %}nav_{{ nav.name }}{% endcapture %}{% if site.data.i18n.strings[nav_key] %}{% include t.html key=nav_key %}{% elsif nav.label %}{{ nav.label }}{% else %}{{ nav.name | capitalize }}{% endif %}</a>
         </li>
         {% endfor %}
       </ul>
       <div class="d-flex align-items-center" style="gap: var(--space-2);">
-        <button class="search-toggle" id="searchToggle" aria-label="Search site">
+        {% if site.data.i18n.languages.size > 1 %}
+        <select class="lang-select" id="langSelect" {% include ta.html attr="aria-label" key="language" %}>
+          {% for l in site.data.i18n.languages %}<option value="{{ l.code }}" lang="{{ l.code }}" title="{{ l.name }}">{{ l.short | default: l.code | upcase }}</option>{% endfor %}
+        </select>
+        {% endif %}
+        <button class="search-toggle" id="searchToggle" {% include ta.html attr="aria-label" key="search_site" %}>
           {% include icon.html name="search" %}
         </button>
         {% unless site.dark_mode == false %}
-        <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <button class="dark-mode-toggle" id="darkModeToggle" {% include ta.html attr="aria-label" key="toggle_dark" %}>
           {% include icon.html name="sun" id="themeIcon" %}
         </button>
         {% endunless %}
@@ -38,9 +43,9 @@
 <div class="search-modal">
 <div class="search-input-wrapper">
 {% include icon.html name="search" class="search-input-icon" %}
-<input type="text" class="search-input" id="searchInput" placeholder="Search pages..." autocomplete="off">
+<input type="text" class="search-input" id="searchInput" {% include ta.html attr="placeholder" key="search_pages" %} autocomplete="off">
 <kbd class="search-kbd">ESC</kbd>
 </div>
-<div class="search-results" id="searchResults"></div>
+<div class="search-results" id="searchResults"{% for l in site.data.i18n.languages %} data-none-{{ l.code }}="{{ site.data.i18n.strings.search_none[l.code] | escape }}" data-error-{{ l.code }}="{{ site.data.i18n.strings.search_error[l.code] | escape }}"{% endfor %}></div>
 </div>
 </div>
