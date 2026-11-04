@@ -14,9 +14,9 @@ languages:
   - code: es
     name: Español
     short: ES
-  - code: ca
-    name: Català
-    short: CA
+  - code: de
+    name: Deutsch
+    short: DE
 
 # Plain text substitutions applied to dates and places (_includes/tx.html),
 # in order -- full month names come before their abbreviations.
@@ -59,71 +59,57 @@ replace:
     - [Prague, Praga]
     - [Paris, París]
     - [Virtual, En línea]
-  ca:
-    - [January, gener]
-    - [February, febrer]
-    - [March, març]
-    - [April, abril]
-    - [May, maig]
-    - [June, juny]
-    - [July, juliol]
-    - [August, agost]
-    - [September, setembre]
-    - [October, octubre]
-    - [November, novembre]
-    - [December, desembre]
-    - ["Jan ", "gen. "]
-    - ["Feb ", "febr. "]
-    - ["Mar ", "març "]
-    - ["Apr ", "abr. "]
-    - ["Jun ", "juny "]
-    - ["Jul ", "jul. "]
-    - ["Aug ", "ag. "]
-    - ["Sep ", "set. "]
-    - ["Oct ", "oct. "]
-    - ["Nov ", "nov. "]
-    - ["Dec ", "des. "]
-    - [Spain, Espanya]
-    - [Italy, Itàlia]
-    - [Germany, Alemanya]
-    - [France, França]
-    - [Canada, Canadà]
-    - [USA, EUA]
-    - [Czech Republic, República Txeca]
+  de:
+    - [January, Januar]
+    - [February, Februar]
+    - [March, März]
+    - [June, Juni]
+    - [July, Juli]
+    - [October, Oktober]
+    - [December, Dezember]
+    - [May, Mai]
+    - ["Mar ", "März "]
+    - ["Oct ", "Okt. "]
+    - ["Dec ", "Dez. "]
+    - [Spain, Spanien]
+    - [Italy, Italien]
+    - [Germany, Deutschland]
+    - [France, Frankreich]
+    - [Canada, Kanada]
+    - [Czech Republic, Tschechien]
     - [Sao Paulo, São Paulo]
-    - [Brazil, Brasil]
-    - [Rome, Roma]
-    - [Milan, Milà]
-    - [Prague, Praga]
-    - [Paris, París]
-    - [Virtual, En línia]
+    - [Brazil, Brasilien]
+    - [Rome, Rom]
+    - [Milan, Mailand]
+    - [Prague, Prag]
+    - [Virtual, Online]
 
 strings:
   # Navbar -- keys are nav_<page name> from nav_pages in _config.yml
-  nav_home:         {en: Home, es: Inicio, ca: Inici}
-  nav_about:        {en: About, es: Sobre mí, ca: Sobre mi}
-  nav_research:     {en: Research, es: Investigación, ca: Recerca}
-  nav_publications: {en: Papers, es: Publicaciones, ca: Publicacions}
-  nav_talks:        {en: Talks, es: Charlas, ca: Xerrades}
-  nav_projects:     {en: Projects, es: Proyectos, ca: Projectes}
-  language:         {en: Language, es: Idioma, ca: Idioma}
-  search_site:      {en: Search site, es: Buscar en el sitio, ca: Cerca al lloc}
-  search_pages:     {en: Search pages..., es: Buscar páginas..., ca: Cerca pàgines...}
-  search_none:      {en: No results found., es: No se encontraron resultados., ca: No s'han trobat resultats.}
-  search_error:     {en: Could not load search index., es: No se pudo cargar el índice de búsqueda., ca: No s'ha pogut carregar l'índex de cerca.}
-  toggle_dark:      {en: Toggle dark mode, es: Cambiar modo oscuro, ca: Canvia el mode fosc}
-  skip:             {en: Skip to content, es: Saltar al contenido, ca: Salta al contingut}
+  nav_home:         {en: Home, es: Inicio, de: "Startseite"}
+  nav_about:        {en: About, es: Sobre mí, de: "Über mich"}
+  nav_research:     {en: Research, es: Investigación, de: "Forschung"}
+  nav_publications: {en: Papers, es: Publicaciones, de: "Publikationen"}
+  nav_talks:        {en: Talks, es: Charlas, de: "Vorträge"}
+  nav_projects:     {en: Projects, es: Proyectos, de: "Projekte"}
+  language:         {en: Language, es: Idioma, de: "Sprache"}
+  search_site:      {en: Search site, es: Buscar en el sitio, de: "Website durchsuchen"}
+  search_pages:     {en: Search pages..., es: Buscar páginas..., de: "Seiten durchsuchen..."}
+  search_none:      {en: No results found., es: No se encontraron resultados., de: "Keine Ergebnisse gefunden."}
+  search_error:     {en: Could not load search index., es: No se pudo cargar el índice de búsqueda., de: "Suchindex konnte nicht geladen werden."}
+  toggle_dark:      {en: Toggle dark mode, es: Cambiar modo oscuro, de: "Dunkelmodus umschalten"}
+  skip:             {en: Skip to content, es: Saltar al contenido, de: "Zum Inhalt springen"}
 
   site_title:
     en: Particle Physicist, Ph.D. Candidate
     es: Físico de partículas, doctorando
-    ca: Físic de partícules, doctorand
+    de: "Teilchenphysiker, Doktorand"
 
   # Home
-  chip_oscillations: {en: Neutrino Oscillations, es: Oscilaciones de neutrinos, ca: Oscil·lacions de neutrins}
-  chip_solar:        {en: Solar Neutrinos, es: Neutrinos solares, ca: Neutrins solars}
-  chip_lartpc:       {en: Liquid Argon TPCs, es: TPC de argón líquido, ca: TPC d'argó líquid}
-  chip_pds:          {en: Photon Detection, es: Detección de fotones, ca: Detecció de fotons}
+  chip_oscillations: {en: Neutrino Oscillations, es: Oscilaciones de neutrinos, de: "Neutrinooszillationen"}
+  chip_solar:        {en: Solar Neutrinos, es: Neutrinos solares, de: "Sonnenneutrinos"}
+  chip_lartpc:       {en: Liquid Argon TPCs, es: TPC de argón líquido, de: "Flüssigargon-TPCs"}
+  chip_pds:          {en: Photon Detection, es: Detección de fotones, de: "Photonendetektion"}
   home_intro:
     en: >-
       I work on low-energy neutrino physics for the **Deep Underground Neutrino Experiment**
@@ -140,71 +126,64 @@ strings:
       LArSoft, y estudios de sensibilidad a **neutrinos solares**: la asimetría día–noche, el
       potencial de descubrimiento de neutrinos HEP y el alcance de DUNE sobre los parámetros de
       oscilación solar.
-    ca: >-
-      Treballo en física de neutrins de baixa energia per al **Deep Underground Neutrino
-      Experiment** (DUNE), des del maquinari del detector fins a l'anàlisi física. La meva feina
-      inclou la caracterització criogènica dels fotodetectors **X-ARAPUCA**, la simulació
-      Monte Carlo i la reconstrucció de senyals de càrrega i centelleig de baixa energia a
-      LArSoft, i estudis de sensibilitat a **neutrins solars**: l'asimetria dia–nit, el
-      potencial de descobriment de neutrins HEP i l'abast de DUNE sobre els paràmetres
-      d'oscil·lació solar.
-  cv:            {en: Curriculum Vitae, es: Currículum vítae, ca: Currículum vitae}
+    de: "Ich arbeite an niederenergetischer Neutrinophysik für das **Deep Underground Neutrino Experiment** (DUNE), von der Detektorhardware bis zur Physikanalyse. Meine Arbeit umfasst die kryogene Charakterisierung der **X-ARAPUCA**-Photodetektoren, die Monte-Carlo-Simulation und Rekonstruktion niederenergetischer Ladungs- und Szintillationssignale in LArSoft sowie Sensitivitätsstudien zu **Sonnenneutrinos**: die Tag-Nacht-Asymmetrie, das Entdeckungspotenzial für HEP-Neutrinos und die Reichweite von DUNE bei den Parametern der solaren Oszillation."
+  cv:            {en: Curriculum Vitae, es: Currículum vítae, de: "Lebenslauf"}
   cv_callout:
     en: My CV is generated from the same data as this site and rebuilt on every commit.
     es: Mi CV se genera a partir de los mismos datos que este sitio y se reconstruye con cada commit.
-    ca: El meu CV es genera a partir de les mateixes dades que aquest lloc i es reconstrueix amb cada commit.
+    de: "Mein Lebenslauf wird aus denselben Daten wie diese Website erzeugt und bei jedem Commit neu erstellt."
   cv_sidebar:
     en: Generated from this site's own data and rebuilt on every commit.
     es: Generado a partir de los datos de este sitio y reconstruido con cada commit.
-    ca: Generat a partir de les dades d'aquest lloc i reconstruït amb cada commit.
-  cv_download:   {en: Download the PDF, es: Descargar el PDF, ca: Descarrega el PDF}
-  first_author_pubs: {en: First-author publications, es: Publicaciones como primer autor, ca: Publicacions com a primer autor}
-  all_pubs:      {en: All publications, es: Todas las publicaciones, ca: Totes les publicacions}
+    de: "Aus den Daten dieser Website erzeugt und bei jedem Commit neu erstellt."
+  cv_download:   {en: Download the PDF, es: Descargar el PDF, de: "PDF herunterladen"}
+  first_author_pubs: {en: First-author publications, es: Publicaciones como primer autor, de: "Publikationen als Erstautor"}
+  all_pubs:      {en: All publications, es: Todas las publicaciones, de: "Alle Publikationen"}
 
   # About
-  about:         {en: About, es: Sobre mí, ca: Sobre mi}
-  education:     {en: Education, es: Formación, ca: Formació}
-  positions:     {en: Positions, es: Puestos, ca: Llocs}
-  languages:     {en: Languages, es: Idiomas, ca: Idiomes}
-  thesis:        {en: Thesis, es: Tesis, ca: Tesi}
+  about:         {en: About, es: Sobre mí, de: "Über mich"}
+  education:     {en: Education, es: Formación, de: "Ausbildung"}
+  positions:     {en: Positions, es: Puestos, de: "Stellen"}
+  languages:     {en: Languages, es: Idiomas, de: "Sprachen"}
+  thesis:        {en: Thesis, es: Tesis, de: "Abschlussarbeit"}
 
   # Research
-  research:      {en: Research, es: Investigación, ca: Recerca}
+  research:      {en: Research, es: Investigación, de: "Forschung"}
 
   # Publications
-  publications:  {en: Publications, es: Publicaciones, ca: Publicacions}
+  publications:  {en: Publications, es: Publicaciones, de: "Publikationen"}
   pubs_intro:
-    en: Generated from my [INSPIRE-HEP record](INSPIRE) by `tools/fetch_inspire.py` and refreshed weekly.
-    es: Generadas a partir de mi [perfil en INSPIRE-HEP](INSPIRE) con `tools/fetch_inspire.py` y actualizadas cada semana.
-    ca: Generades a partir del meu [perfil a INSPIRE-HEP](INSPIRE) amb `tools/fetch_inspire.py` i actualitzades cada setmana.
-  pubs_filter:   {en: "Filter by title, author, or year...", es: "Filtrar por título, autor o año...", ca: "Filtra per títol, autor o any..."}
-  preprints:     {en: Preprints, es: Preprints, ca: Preprints}
-  articles:      {en: Journal Articles, es: Artículos en revistas, ca: Articles en revistes}
-  proceedings:   {en: Conference Proceedings, es: Actas de congresos, ca: Actes de congressos}
+    en: Generated from my [INSPIRE-HEP record](__URL__) by `tools/fetch_inspire.py` and refreshed weekly.
+    es: Generadas a partir de mi [perfil en INSPIRE-HEP](__URL__) con `tools/fetch_inspire.py` y actualizadas cada semana.
+    de: "Erzeugt aus meinem [INSPIRE-HEP-Profil](__URL__) mit `tools/fetch_inspire.py` und wöchentlich aktualisiert."
+  pubs_filter:   {en: "Filter by title, author, or year...", es: "Filtrar por título, autor o año...", de: "Nach Titel, Autor oder Jahr filtern..."}
+  preprints:     {en: Preprints, es: Preprints, de: "Preprints"}
+  articles:      {en: Journal Articles, es: Artículos en revistas, de: "Zeitschriftenartikel"}
+  proceedings:   {en: Conference Proceedings, es: Actas de congresos, de: "Konferenzbeiträge"}
 
   # Talks
-  talks:         {en: "Talks & Posters", es: Charlas y pósteres, ca: Xerrades i pòsters}
-  conferences:   {en: Conferences, es: Congresos, ca: Congressos}
-  schools:       {en: Schools, es: Escuelas, ca: Escoles}
-  Talk:          {en: Talk, es: Charla, ca: Xerrada}
-  Poster:        {en: Poster, es: Póster, ca: Pòster}
-  link:          {en: link, es: enlace, ca: enllaç}
-  slides:        {en: slides, es: diapositivas, ca: diapositives}
+  talks:         {en: "Talks & Posters", es: Charlas y pósteres, de: "Vorträge & Poster"}
+  conferences:   {en: Conferences, es: Congresos, de: "Konferenzen"}
+  schools:       {en: Schools, es: Escuelas, de: "Schulen"}
+  Talk:          {en: Talk, es: Charla, de: "Vortrag"}
+  Poster:        {en: Poster, es: Póster, de: "Poster"}
+  link:          {en: link, es: enlace, de: "Link"}
+  slides:        {en: slides, es: diapositivas, de: "Folien"}
 
   # Projects
-  projects:      {en: Projects, es: Proyectos, ca: Projectes}
+  projects:      {en: Projects, es: Proyectos, de: "Projekte"}
   projects_intro:
-    en: A few things I maintain in the open. Everything else is on [GitHub](GITHUB).
-    es: Algunas cosas que mantengo en abierto. Todo lo demás está en [GitHub](GITHUB).
-    ca: Algunes coses que mantinc en obert. Tota la resta és a [GitHub](GITHUB).
+    en: A few things I maintain in the open. Everything else is on [GitHub](__URL__).
+    es: Algunas cosas que mantengo en abierto. Todo lo demás está en [GitHub](__URL__).
+    de: "Einige Projekte, die ich offen pflege. Alles Weitere findet sich auf [GitHub](__URL__)."
 
   # Footer
-  contact:       {en: Contact, es: Contacto, ca: Contacte}
-  links:         {en: Links, es: Enlaces, ca: Enllaços}
-  use_template:  {en: Use this template!, es: ¡Usa esta plantilla!, ca: Fes servir aquesta plantilla!}
+  contact:       {en: Contact, es: Contacto, de: "Kontakt"}
+  links:         {en: Links, es: Enlaces, de: "Links"}
+  use_template:  {en: Use this template!, es: ¡Usa esta plantilla!, de: "Diese Vorlage verwenden!"}
 
   # 404
-  not_found:     {en: "The page you're looking for doesn't exist.", es: La página que buscas no existe., ca: La pàgina que cerques no existeix.}
-  go_home:       {en: Go Home, es: Ir al inicio, ca: Ves a l'inici}
-  search_btn:    {en: Search Site, es: Buscar, ca: Cerca}
-  try_pages:     {en: Try these pages, es: Prueba estas páginas, ca: Prova aquestes pàgines}
+  not_found:     {en: "The page you're looking for doesn't exist.", es: La página que buscas no existe., de: "Die gesuchte Seite existiert nicht."}
+  go_home:       {en: Go Home, es: Ir al inicio, de: "Zur Startseite"}
+  search_btn:    {en: Search Site, es: Buscar, de: "Suchen"}
+  try_pages:     {en: Try these pages, es: Prueba estas páginas, de: "Diese Seiten ausprobieren"}

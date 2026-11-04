@@ -6,7 +6,7 @@ permalink: /projects/
 
 # {% include t.html key="projects" %}
 
-<div markdown="0">{% include t.html key="projects_intro" md=true sub="GITHUB" with=site.links.github %}</div>
+<div markdown="0">{% include t.html key="projects_intro" md=true sub="__URL__" with=site.links.github %}</div>
 
 {% for project in site.data.projects %}
 <div class="section-card" markdown="0">

@@ -6,7 +6,7 @@ permalink: /publications/
 
 # {% include t.html key="publications" %}
 
-<div markdown="0">{% include t.html key="pubs_intro" md=true sub="INSPIRE" with=site.links.inspire %}</div>
+<div markdown="0">{% include t.html key="pubs_intro" md=true sub="__URL__" with=site.links.inspire %}</div>
 
 <input type="text" class="pub-search" id="pubSearch" {% include ta.html attr="placeholder" key="pubs_filter" %}>
 

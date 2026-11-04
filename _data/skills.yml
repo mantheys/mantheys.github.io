@@ -7,30 +7,30 @@ technical:
 languages:
   - name: Spanish
     name_es: Español
-    name_ca: Castellà
+    name_de: Spanisch
     level: Mother tongue
     level_es: Lengua materna
-    level_ca: Llengua materna
+    level_de: Muttersprache
     detail: "Speaking: native, Reading: native, Writing: native and Listening: native"
   - name: English
     name_es: Inglés
-    name_ca: Anglès
+    name_de: Englisch
     level: Cambridge -- C2
     detail: "Speaking: proficient, Reading: proficient, Writing: proficient and Listening: proficient"
   - name: German
     name_es: Alemán
-    name_ca: Alemany
+    name_de: Deutsch
     level: EOI Palma -- C1
     detail: "Speaking: advanced, Reading: advanced, Writing: advanced and Listening: advanced"
   - name: Catalan
     name_es: Catalán
-    name_ca: Català
+    name_de: Katalanisch
     level: C1
     detail: "Speaking: advanced, Reading: advanced, Writing: advanced and Listening: advanced"
   - name: Italian
     name_es: Italiano
-    name_ca: Italià
+    name_de: Italienisch
     level: Bremen University -- A2
     level_es: Universidad de Bremen -- A2
-    level_ca: Universitat de Bremen -- A2
+    level_de: Universität Bremen -- A2
     detail: "Speaking: intermediate, Reading: intermediate, Writing: intermediate and Listening: intermediate"

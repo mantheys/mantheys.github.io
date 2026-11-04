@@ -3,7 +3,7 @@
 - label: Ph.D. RESEARCH
   label_en: Ph.D. research
   label_es: Investigación doctoral
-  label_ca: Recerca doctoral
+  label_de: Promotionsforschung
   title: Deep Underground Neutrino Experiment
   location: Madrid, Spain
   dates: 2021 - 2025
@@ -114,64 +114,66 @@
       herramientas de simulación y avanzando en las técnicas de reconstrucción y de
       análisis de oscilaciones, aspiro a contribuir al objetivo a largo plazo de DUNE
       de ofrecer una física de neutrinos transformadora.
-  paragraphs_ca:
+  paragraphs_de:
     - >-
-      La meva recerca se centra a ampliar les capacitats físiques del
-      **Deep Underground Neutrino Experiment** (DUNE) tant amb el desenvolupament de
-      maquinari com amb l'anàlisi de dades, amb un èmfasi especial a millorar la
-      detecció de neutrins de baixa energia. La meva experiència m'ha portat a fer
-      mesures criogèniques de laboratori amb dispositius fotosensibles, simulacions
-      Monte Carlo i algorismes de reconstrucció per a neutrins solars.
+      Meine Forschung zielt darauf ab, das physikalische Potenzial des
+      **Deep Underground Neutrino Experiment** (DUNE) sowohl durch
+      Hardwareentwicklung als auch durch Datenanalyse zu erweitern, mit besonderem
+      Schwerpunkt auf dem Nachweis niederenergetischer Neutrinos. Dabei habe ich
+      kryogene Labormessungen an lichtempfindlichen Bauteilen durchgeführt,
+      Monte-Carlo-Simulationen erstellt und Rekonstruktionsalgorithmen für
+      Sonnenneutrinos entwickelt.
     - >-
-      Una part central de la meva recerca ha estat la caracterització i
-      l'optimització dels fotodetectors **X-ARAPUCA**. Aquests dispositius són una
-      peça crítica del **Sistema de Detecció de Fotons** (PDS) de DUNE, encarregat de
-      captar la llum de centelleig produïda al detector. Com que el rendiment del PDS
-      afecta directament la reconstrucció d'esdeveniments, sobretot en interaccions
-      de baixa energia com els neutrins solars, és essencial caracteritzar-ne el
-      comportament. La meva feina consisteix a operar aquests dispositius en nitrogen
-      o argó líquid, disparar sobre esdeveniments concrets, calibrar una font de llum
-      i quantificar la resposta del sistema. Amb aquests estudis he calculat
-      l'**Eficiència de Detecció de Fotons** esperada per a les X-ARAPUCA de DUNE a
-      escala real i he aportat dades essencials per ajustar la simulació i optimitzar
-      el detector. Els meus resultats s'han publicat a
-      [arXiv:2511.12328](https://arxiv.org/abs/2511.12328).
+      Ein zentraler Teil meiner Forschung ist die Charakterisierung und Optimierung
+      der **X-ARAPUCA**-Photodetektoren. Sie sind ein entscheidender Bestandteil des
+      **Photonendetektionssystems** (PDS) von DUNE, das das im Detektor erzeugte
+      Szintillationslicht erfasst. Da die Leistung des PDS die
+      Ereignisrekonstruktion direkt beeinflusst, besonders bei niederenergetischen
+      Wechselwirkungen wie denen von Sonnenneutrinos, muss sein Verhalten genau
+      bekannt sein. Dazu betreibe ich diese Detektoren in flüssigem Stickstoff oder
+      flüssigem Argon, triggere auf ausgewählte Ereignisse, kalibriere eine
+      Lichtquelle und quantifiziere die Antwort des Systems. Auf dieser Grundlage
+      habe ich die erwartete **Photonennachweiseffizienz** der DUNE-X-ARAPUCAs in
+      voller Größe bestimmt und wesentliche Eingaben für die Abstimmung der
+      Simulation und die Optimierung des Detektors geliefert. Die Ergebnisse sind
+      in [arXiv:2511.12328](https://arxiv.org/abs/2511.12328) veröffentlicht.
     - >-
-      Com a pont entre el maquinari i l'anàlisi física, he contribuït àmpliament a
-      l'entorn de simulació **Monte Carlo** de DUNE, centrant-me en la reconstrucció
-      de senyals de càrrega i centelleig de baixa energia. Les meves contribucions
-      inclouen tècniques de filtratge i deconvolució de formes d'ona, reconstrucció
-      de polsos de fotons, agrupament d'esdeveniments i associació càrrega-llum per
-      a les anàlisis físiques posteriors. Aquest treball s'ha incorporat al flux
-      general de **simulació de LArSoft**. Un objectiu científic clau és la
-      reconstrucció i l'estudi de neutrins de baixa energia provinents del Sol. La
-      combinació sense precedents de massa i alta secció eficaç de DUNE li permetrà
-      mesurar amb precisió el flux de neutrins solars i explorar els efectes de
-      matèria. La meva recerca hi contribueix amb algorismes de reconstrucció del
-      vèrtex i de l'energia que combinen els senyals de centelleig i ionització, i
-      amb l'estudi de trets topològics que distingeixen les interaccions de neutrins
-      de baixa energia del fons radiològic.
+      Als Brücke zwischen Hardware und Physikanalyse habe ich umfassend zum
+      **Monte-Carlo**-Simulationsframework von DUNE beigetragen, mit Fokus auf der
+      Rekonstruktion niederenergetischer Ladungs- und Szintillationssignale. Meine
+      Beiträge umfassen Filterung und Entfaltung von Wellenformen, die
+      Rekonstruktion von Photonenpulsen, das Clustern von Ereignissen sowie die
+      Zuordnung von Ladung und Licht für nachgelagerte Physikanalysen. Diese
+      Arbeiten sind in den allgemeinen **LArSoft-Simulations**-Workflow
+      eingeflossen. Ein wichtiges wissenschaftliches Ziel ist die Rekonstruktion
+      und Untersuchung niederenergetischer Neutrinos aus der Sonne. Dank seiner
+      beispiellosen Kombination aus Masse und hohem Wirkungsquerschnitt wird DUNE
+      den Fluss der Sonnenneutrinos präzise messen und Materieeffekte untersuchen
+      können. Dazu trage ich mit Algorithmen zur Vertex- und Energierekonstruktion
+      bei, die Szintillations- und Ionisationssignale kombinieren, sowie mit
+      Studien topologischer Merkmale, die niederenergetische
+      Neutrinowechselwirkungen vom radiologischen Untergrund unterscheiden.
     - >-
-      Amb aquestes eines he fet anàlisis per quantificar la sensibilitat de DUNE als
-      neutrins solars, com ara l'**Asimetria Dia-Nit**, el **Descobriment de Neutrins
-      HEP** i la **Sensibilitat als paràmetres d'Oscil·lació Solar**. També estudio
-      com una millor detecció de fotons es tradueix en una millor resolució en
-      energia i, en última instància, en un abast físic més gran. Els resultats
-      d'aquest treball s'han presentat a
-      [doi:10.22323/1.476.0217](http://dx.doi.org/10.22323/1.476.0217).
+      Mit diesen Werkzeugen habe ich Analysen zur Sensitivität von DUNE auf
+      Sonnenneutrinos durchgeführt, etwa zur **Tag-Nacht-Asymmetrie**, zur
+      **Entdeckung von HEP-Neutrinos** und zur **Sensitivität auf die Parameter der
+      solaren Oszillation**. Außerdem untersuche ich, wie eine bessere
+      Photonendetektion zu einer besseren Energieauflösung und damit zu einer
+      größeren physikalischen Reichweite führt. Ergebnisse dieser Arbeit wurden in
+      [doi:10.22323/1.476.0217](http://dx.doi.org/10.22323/1.476.0217) vorgestellt.
     - >-
-      En resum, la meva recerca integra el desenvolupament de detectors, la simulació
-      detallada i l'anàlisi física per millorar la capacitat de DUNE d'observar i
-      caracteritzar neutrins de baixa energia. Millorant el rendiment i la
-      comprensió del sistema de detecció de fotons, perfeccionant les eines de
-      simulació i avançant en les tècniques de reconstrucció i d'anàlisi
-      d'oscil·lacions, aspiro a contribuir a l'objectiu a llarg termini de DUNE
-      d'oferir una física de neutrins transformadora.
+      Zusammengefasst verbindet meine Forschung Detektorentwicklung, detaillierte
+      Simulation und Physikanalyse, um die Fähigkeit von DUNE zu verbessern,
+      niederenergetische Neutrinos zu beobachten und zu charakterisieren. Indem ich
+      Leistung und Verständnis des Photonendetektionssystems verbessere,
+      Simulationswerkzeuge verfeinere und Rekonstruktions- und
+      Oszillationsanalysen weiterentwickle, möchte ich zum langfristigen Ziel von
+      DUNE beitragen, wegweisende Neutrinophysik zu liefern.
 
 - label: MASTER RESEARCH
   label_en: Master's research
   label_es: Investigación de máster
-  label_ca: Recerca de màster
+  label_de: Masterforschung
   title: BullKid
   location: Rome, Italy
   dates: 2020 - 2021
@@ -200,16 +202,16 @@
       proyecto, y obtuve curvas de exclusión para materia oscura de baja masa que
       podría alcanzar una versión a mayor escala de este prototipo. Este trabajo se
       presentó en forma de póster en el congreso **Low Temperature Detectors**.
-  paragraphs_ca:
+  paragraphs_de:
     - >-
-      Vaig participar en el projecte d'R+D **BULky and Low-Threshold Kinetic
-      Inductance Detectors** (BULLKID), dedicat al desenvolupament de **Detectors
-      d'Inductància Cinètica** (KID) criogènics per a la cerca de processos rars de
-      baixa energia, com la **Matèria Fosca de Baixa Massa** i la dispersió coherent
-      de neutrins. Vaig participar en el disseny litogràfic d'aquests MKID, ajustant
-      les seves freqüències de ressonància per aconseguir capacitat de multiplexatge.
-      També vaig fer estudis de qualitat de dades i de soroll en un dels primers
-      prototips funcionals del projecte, i vaig obtenir corbes d'exclusió per a
-      matèria fosca de baixa massa que podria assolir una versió a més escala
-      d'aquest prototip. Aquest treball es va presentar en forma de pòster al
-      congrés **Low Temperature Detectors**.
+      Ich habe am F&E-Projekt **BULky and Low-Threshold Kinetic Inductance
+      Detectors** (BULLKID) mitgearbeitet, das kryogene **Kinetic Inductance
+      Detectors** (KIDs) für die Suche nach seltenen niederenergetischen Prozessen
+      wie **leichter Dunkler Materie** und kohärenter Neutrinostreuung entwickelt.
+      Ich war am lithografischen Design dieser MKIDs beteiligt und habe ihre
+      Resonanzfrequenzen so abgestimmt, dass sie gemultiplext ausgelesen werden
+      können. Außerdem habe ich Datenqualitäts- und Rauschstudien an einem der
+      ersten funktionsfähigen Prototypen des Projekts durchgeführt und
+      Ausschlusskurven für leichte Dunkle Materie berechnet, die eine
+      hochskalierte Version dieses Prototyps erreichen könnte. Die Arbeit wurde als
+      Poster auf der Konferenz **Low Temperature Detectors** vorgestellt.

@@ -21,14 +21,14 @@
     plotipus. Una calculadora web estática sobre el mismo motor ofrece espectros,
     asimetrías día-noche y presupuestos de incertidumbre para un detector elegido,
     directamente en el navegador.
-  description_ca: >-
-    Comparatives comunitàries d'eines de neutrins solars. Totes les eines calculen
-    el mateix problema fix, des dels models solars estàndard i la propagació MSW al
-    Sol i la Terra fins a les seccions eficaces i les taxes d'esdeveniments, i
-    SNUfish en valida els resultats i els representa junts amb plotipus. Una
-    calculadora web estàtica sobre el mateix motor ofereix espectres, asimetries
-    dia-nit i pressupostos d'incertesa per a un detector triat, directament al
-    navegador.
+  description_de: >-
+    Gemeinschaftliche Vergleichstests für Werkzeuge der Sonnenneutrinophysik. Alle
+    Werkzeuge berechnen dasselbe festgelegte Problem, von Standardsonnenmodellen über
+    die MSW-Propagation in Sonne und Erde bis zu Wirkungsquerschnitten und
+    Ereignisraten; SNUfish validiert die Ergebnisse und stellt sie mit plotipus
+    nebeneinander dar. Ein statischer Web-Rechner auf derselben Grundlage liefert
+    Spektren, Tag-Nacht-Asymmetrien und Unsicherheitsbudgets für einen gewählten
+    Detektor direkt im Browser.
 
 - name: plotipus
   repo: https://github.com/mantheys/plotipus
@@ -45,12 +45,12 @@
     definición de las figuras bajo control de versiones junto al análisis, en lugar
     de en scripts sueltos, de modo que las figuras de un artículo se pueden
     regenerar con un único archivo de comandos.
-  description_ca: >-
-    Gràfics i taules per a publicacions a partir de DataFrames de pandas
-    serialitzats, guiats per llistes d'ordres en text pla. Manté la definició de
-    les figures sota control de versions al costat de l'anàlisi, en lloc de en
-    scripts solts, de manera que les figures d'un article es poden regenerar amb un
-    únic fitxer d'ordres.
+  description_de: >-
+    Abbildungen und Tabellen für Veröffentlichungen aus serialisierten
+    pandas-DataFrames, gesteuert über Befehlslisten im Klartext. Die
+    Abbildungsdefinitionen liegen so neben der Analyse in der Versionsverwaltung
+    statt in Einmal-Skripten, und die Abbildungen eines Artikels lassen sich mit
+    einer einzigen Befehlsdatei neu erzeugen.
 
 - name: cathersis
   repo: https://github.com/mantheys/cathersis
@@ -61,6 +61,6 @@
   description_es: >-
     Fuentes LaTeX de mi tesis doctoral, *Liquid Argon Detector Development for the
     Neutrino Oscillation Measurement with the DUNE experiment*.
-  description_ca: >-
-    Fonts LaTeX de la meva tesi doctoral, *Liquid Argon Detector Development for the
+  description_de: >-
+    LaTeX-Quellen meiner Dissertation, *Liquid Argon Detector Development for the
     Neutrino Oscillation Measurement with the DUNE experiment*.
