@@ -29,7 +29,7 @@ ORCID <a href="{{ site.links.orcid }}">0000-0002-9368-9120</a> &middot;
 <h3>{% include t.html key="education" %}</h3>
 <ul>
 {% for e in site.data.education %}
-<li><strong>{% include tf.html obj=e field="degree" %}</strong>, {{ e.institution }}, {% include tx.html text=e.location %} ({{ e.dates }}{% if e.status %}, {% include tf.html obj=e field="status" %}{% endif %})<br>
+<li><strong>{% include tf.html obj=e field="degree" %}</strong>, {{ e.institution }}, {% include tx.html text=e.location %} ({{ e.dates }}{% if e.graduated %}, {% include t.html key="graduated" %} {% include tx.html text=e.graduated %}{% endif %}{% if e.status %}, {% include tf.html obj=e field="status" %}{% endif %})<br>
 <span style="color: var(--text-secondary);">{% include t.html key="thesis" %}: {{ e.thesis }}</span></li>
 {% endfor %}
 </ul>

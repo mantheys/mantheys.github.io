@@ -125,6 +125,7 @@ strings:
   chip_lartpc:       {en: Liquid Argon TPCs, es: TPC de argón líquido, ca: TPC d'argó líquid}
   chip_overview:     {en: Overview, es: Resumen, ca: Resum}
   chip_pds:          {en: Photon Detection, es: Detección de fotones, ca: Detecció de fotons}
+  chip_quantum:      {en: Quantum Sensors, es: Sensores cuánticos, ca: Sensors quàntics}
   home_intro:
     en: >-
       I work on low-energy neutrino physics for the [**Deep Underground Neutrino Experiment**](@R@#overview)
@@ -133,7 +134,8 @@ strings:
       reconstruction of low-energy charge and scintillation signals in
       [LArSoft](@R@#lartpc), and sensitivity studies for [**solar neutrinos**](@R@#solar) —
       the [day–night asymmetry, HEP neutrino discovery potential, and DUNE's reach on the
-      solar oscillation parameters](@R@#oscillations).
+      solar oscillation parameters](@R@#oscillations). Earlier, I developed
+      [**quantum sensors**](@R@#quantum-sensors) (kinetic inductance detectors) for low-mass dark matter searches.
     es: >-
       Trabajo en física de neutrinos de baja energía para el [**Deep Underground Neutrino
       Experiment**](@R@#overview) (DUNE), desde el hardware del detector hasta el análisis físico. Mi trabajo
@@ -141,7 +143,8 @@ strings:
       Monte Carlo y la reconstrucción de señales de carga y centelleo de baja energía en
       [LArSoft](@R@#lartpc), y estudios de sensibilidad a [**neutrinos solares**](@R@#solar):
       [la asimetría día–noche, el potencial de descubrimiento de neutrinos HEP y el alcance de
-      DUNE sobre los parámetros de oscilación solar](@R@#oscillations).
+      DUNE sobre los parámetros de oscilación solar](@R@#oscillations). Antes desarrollé
+      [**sensores cuánticos**](@R@#quantum-sensors) (detectores de inductancia cinética) para la búsqueda de materia oscura de baja masa.
     ca: >-
       Treballo en física de neutrins de baixa energia per al [**Deep Underground Neutrino
       Experiment**](@R@#overview) (DUNE), des del maquinari del detector fins a l'anàlisi física. La meva feina
@@ -149,7 +152,8 @@ strings:
       Monte Carlo i la reconstrucció de senyals de càrrega i centelleig de baixa energia a
       [LArSoft](@R@#lartpc), i estudis de sensibilitat a [**neutrins solars**](@R@#solar):
       [l'asimetria dia–nit, el potencial de descobriment de neutrins HEP i l'abast de DUNE
-      sobre els paràmetres d'oscil·lació solar](@R@#oscillations).
+      sobre els paràmetres d'oscil·lació solar](@R@#oscillations). Abans vaig desenvolupar
+      [**sensors quàntics**](@R@#quantum-sensors) (detectors d'inductància cinètica) per a la cerca de matèria fosca de baixa massa.
   cv:            {en: Curriculum Vitae, es: Currículum vítae, ca: Currículum vitae}
   cv_callout:
     en: My CV is generated from the same data as this site and rebuilt on every commit.
@@ -169,6 +173,7 @@ strings:
   positions:     {en: Positions, es: Puestos, ca: Llocs}
   languages:     {en: Languages, es: Idiomas, ca: Idiomes}
   thesis:        {en: Thesis, es: Tesis, ca: Tesi}
+  graduated:     {en: graduated, es: graduado, ca: graduat}
 
   # Research
   research:      {en: Research, es: Investigación, ca: Recerca}

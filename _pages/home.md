@@ -12,6 +12,7 @@ permalink: /
 <a href="{{ '/research/' | relative_url }}#solar" class="chip">{% include t.html key="chip_solar" %}</a>
 <a href="{{ '/research/' | relative_url }}#lartpc" class="chip">{% include t.html key="chip_lartpc" %}</a>
 <a href="{{ '/research/' | relative_url }}#photon-detection" class="chip">{% include t.html key="chip_pds" %}</a>
+<a href="{{ '/research/' | relative_url }}#quantum-sensors" class="chip">{% include t.html key="chip_quantum" %}</a>
 <a href="{{ '/research/' | relative_url }}#overview" class="chip">DUNE</a>
 </div>
 
