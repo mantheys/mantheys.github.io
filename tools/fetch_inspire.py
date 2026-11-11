@@ -36,8 +36,9 @@ SELECTED_MAX_LISTED = 12
 SURNAME = "Manthey"
 
 # How your name is written in the BibTeX for the website, whatever variant an
-# INSPIRE record uses ("S. Manthey" on some papers). Must match scholar.last_name
-# and scholar.first_name in _config.yml for the name to be bolded.
+# INSPIRE record uses ("S. Manthey" on some papers). The rendered form
+# ("S. Manthey Corchado") must match scholar.first_name + last_name in _config.yml
+# for the name to be bolded.
 BIB_NAME = "Manthey Corchado, S."
 
 # INSPIRE records that mangle Spanish double surnames, mapped to the correct
