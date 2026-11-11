@@ -123,31 +123,33 @@ strings:
   chip_oscillations: {en: Neutrino Oscillations, es: Oscilaciones de neutrinos, ca: Oscil·lacions de neutrins}
   chip_solar:        {en: Solar Neutrinos, es: Neutrinos solares, ca: Neutrins solars}
   chip_lartpc:       {en: Liquid Argon TPCs, es: TPC de argón líquido, ca: TPC d'argó líquid}
+  chip_overview:     {en: Overview, es: Resumen, ca: Resum}
   chip_pds:          {en: Photon Detection, es: Detección de fotones, ca: Detecció de fotons}
   home_intro:
     en: >-
-      I work on low-energy neutrino physics for the **Deep Underground Neutrino Experiment**
+      I work on low-energy neutrino physics for the [**Deep Underground Neutrino Experiment**](@R@#overview)
       (DUNE), spanning detector hardware and physics analysis. My work covers cryogenic
-      characterisation of **X-ARAPUCA** photon detectors, Monte Carlo simulation and
-      reconstruction of low-energy charge and scintillation signals in LArSoft, and
-      sensitivity studies for **solar neutrinos** — the day–night asymmetry, HEP neutrino
-      discovery potential, and DUNE's reach on the solar oscillation parameters.
+      characterisation of [**photon detectors**](@R@#photon-detection), Monte Carlo simulation and
+      reconstruction of low-energy charge and scintillation signals in
+      [LArSoft](@R@#lartpc), and sensitivity studies for [**solar neutrinos**](@R@#solar) —
+      the [day–night asymmetry, HEP neutrino discovery potential, and DUNE's reach on the
+      solar oscillation parameters](@R@#oscillations).
     es: >-
-      Trabajo en física de neutrinos de baja energía para el **Deep Underground Neutrino
-      Experiment** (DUNE), desde el hardware del detector hasta el análisis físico. Mi trabajo
-      abarca la caracterización criogénica de los fotodetectores **X-ARAPUCA**, la simulación
+      Trabajo en física de neutrinos de baja energía para el [**Deep Underground Neutrino
+      Experiment**](@R@#overview) (DUNE), desde el hardware del detector hasta el análisis físico. Mi trabajo
+      abarca la caracterización criogénica de los [**fotodetectores**](@R@#photon-detection), la simulación
       Monte Carlo y la reconstrucción de señales de carga y centelleo de baja energía en
-      LArSoft, y estudios de sensibilidad a **neutrinos solares**: la asimetría día–noche, el
-      potencial de descubrimiento de neutrinos HEP y el alcance de DUNE sobre los parámetros de
-      oscilación solar.
+      [LArSoft](@R@#lartpc), y estudios de sensibilidad a [**neutrinos solares**](@R@#solar):
+      [la asimetría día–noche, el potencial de descubrimiento de neutrinos HEP y el alcance de
+      DUNE sobre los parámetros de oscilación solar](@R@#oscillations).
     ca: >-
-      Treballo en física de neutrins de baixa energia per al **Deep Underground Neutrino
-      Experiment** (DUNE), des del maquinari del detector fins a l'anàlisi física. La meva feina
-      inclou la caracterització criogènica dels fotodetectors **X-ARAPUCA**, la simulació
+      Treballo en física de neutrins de baixa energia per al [**Deep Underground Neutrino
+      Experiment**](@R@#overview) (DUNE), des del maquinari del detector fins a l'anàlisi física. La meva feina
+      inclou la caracterització criogènica dels [**fotodetectors**](@R@#photon-detection), la simulació
       Monte Carlo i la reconstrucció de senyals de càrrega i centelleig de baixa energia a
-      LArSoft, i estudis de sensibilitat a **neutrins solars**: l'asimetria dia–nit, el
-      potencial de descobriment de neutrins HEP i l'abast de DUNE sobre els paràmetres
-      d'oscil·lació solar.
+      [LArSoft](@R@#lartpc), i estudis de sensibilitat a [**neutrins solars**](@R@#solar):
+      [l'asimetria dia–nit, el potencial de descobriment de neutrins HEP i l'abast de DUNE
+      sobre els paràmetres d'oscil·lació solar](@R@#oscillations).
   cv:            {en: Curriculum Vitae, es: Currículum vítae, ca: Currículum vitae}
   cv_callout:
     en: My CV is generated from the same data as this site and rebuilt on every commit.

@@ -55,3 +55,34 @@
     line-height: 1.7;
   }
 }
+
+// Topic tabs. All panels stay visible without JS; site.js adds .tabs-ready.
+.tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-4) 0 var(--space-6);
+}
+
+.tab-link {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  background-image: none !important;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+
+  &:hover,
+  &.active {
+    background-color: var(--accent-light);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
+.tabs-ready .tab-panel { display: none; }
+.tabs-ready .tab-panel.active { display: block; }
