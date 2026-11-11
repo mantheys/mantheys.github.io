@@ -59,7 +59,7 @@
     {<< e.degree|tex >>}
     {<< e.institution|tex >>}
     {<< e.location|tex >>}
-    {<< e.dates|tex >><% if e.get('status') %> (<< e.status|tex >>)<% endif %>}
+    {<< e.dates|tex >><% if e.get('graduated') %> (graduated << e.graduated|tex >>)<% endif %><% if e.get('status') %> (<< e.status|tex >>)<% endif %>}
     {Thesis: << e.thesis|md >>}\vspace{0.18cm}
 <% endfor %>
 \end{cventries}
@@ -169,38 +169,5 @@
     \end{cvitems}}
 <% endfor %>
 \end{cventries}
-
-<% if publications %>
-\newpage
-%-------------------------------------------------------------------------------
-%	PUBLICATIONS  (generated from INSPIRE-HEP by tools/fetch_inspire.py)
-%-------------------------------------------------------------------------------
-\cvsection{Publications}
-
-\needspace{6\baselineskip}
-\cvsubsection{Selected articles and proceedings}
-\begin{cvpublications}
-<% for p in publications.selected %>
-  \cvpublication
-    {<< p|authors >>}
-    {``<< p.title|tex >>''<< p|venue >>}
-    {<< p|publink >>}
-<% endfor %>
-\end{cvpublications}
-
-<% if publications.get('collaboration') %>
-% Keep this heading with at least the first few entries.
-\needspace{6\baselineskip}
-\cvsubsection{As a member of the DUNE Collaboration (<< publications.collaboration|length >> papers)}
-\begin{cvpublications}
-<% for p in publications.collaboration %>
-  \cvpublication
-    {<< p|authors >>}
-    {``<< p.title|tex >>''<< p|venue >>}
-    {<< p|publink >>}
-<% endfor %>
-\end{cvpublications}
-<% endif %>
-<% endif %>
 
 \end{document}

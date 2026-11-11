@@ -5,6 +5,7 @@
   python3 tools/build_cv.py --private    # adds home address and phone number
   python3 tools/build_cv.py --no-pdf     # stop after writing cv/cv.tex
   python3 tools/build_cv.py --no-publications
+  python3 tools/build_cv.py --publist    # stand-alone publication list PDF
 
 The PDF lands at assets/cv.pdf, which is what `links.cv` in _config.yml points at,
 so the website always serves the CV built from the same data it renders itself.
@@ -126,6 +127,9 @@ def main() -> int:
                          "cv-private.pdf instead of assets/cv.pdf")
     ap.add_argument("--no-publications", action="store_true",
                     help="omit the INSPIRE publication section")
+    ap.add_argument("--publist", action="store_true",
+                    help="build the stand-alone publication list "
+                         "(assets/publications.pdf) instead of the CV")
     args = ap.parse_args()
 
     env = jinja2.Environment(
@@ -159,7 +163,8 @@ def main() -> int:
     if pubs is None and not args.no_publications:
         print("note: _data/publications.yml missing -- run tools/fetch_inspire.py first")
 
-    rendered = env.get_template("cv.tex.j2").render(
+    name = "publications" if args.publist else "cv"
+    rendered = env.get_template(f"{name}.tex.j2").render(
         profile=profile,
         education=load("education"),
         experience=load("experience"),
@@ -169,7 +174,7 @@ def main() -> int:
         publications=pubs,
     )
 
-    tex_path = CVDIR / "cv.tex"
+    tex_path = CVDIR / f"{name}.tex"
     tex_path.write_text(rendered)
     print(f"wrote {tex_path.relative_to(ROOT)}")
     if args.no_pdf:
@@ -182,7 +187,7 @@ def main() -> int:
     # Twice, so the footer page numbers settle.
     for run in (1, 2):
         proc = subprocess.run(
-            ["xelatex", "-interaction=nonstopmode", "-halt-on-error", "cv.tex"],
+            ["xelatex", "-interaction=nonstopmode", "-halt-on-error", f"{name}.tex"],
             cwd=CVDIR, capture_output=True, text=True,
         )
         if proc.returncode != 0:
@@ -191,8 +196,8 @@ def main() -> int:
             return 1
 
     # The private build never lands in assets/ -- that directory is published.
-    dest = ROOT / ("cv-private.pdf" if args.private else "assets/cv.pdf")
-    shutil.copy(CVDIR / "cv.pdf", dest)
+    dest = ROOT / (f"{name}-private.pdf" if args.private else f"assets/{name}.pdf")
+    shutil.copy(CVDIR / f"{name}.pdf", dest)
     print(f"wrote {dest.relative_to(ROOT)}")
     return 0
 

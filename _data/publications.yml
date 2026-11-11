@@ -314,6 +314,26 @@ selected:
   selected: true
   first_author: false
 collaboration:
+- key: DUNE:2026zcq
+  recid: '3226345'
+  bibtype: unpublished
+  title: Sensitivity to Sterile Neutrinos with Elastic Neutrino-Electron and Highly Elastic Neutrino-Nucleus
+    Scattering in the DUNE Near Detector
+  authors:
+  - DUNE Collaboration
+  et_al: false
+  n_authors: 1314
+  collaboration: DUNE
+  journal: null
+  volume: null
+  number: null
+  pages: null
+  year: '2026'
+  date: '2026-11-06'
+  doi: null
+  arxiv: '2611.10271'
+  selected: false
+  first_author: false
 - key: DUNE:2026aaw
   recid: '3187793'
   bibtype: unpublished

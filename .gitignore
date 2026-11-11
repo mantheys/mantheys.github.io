@@ -9,6 +9,7 @@ _config_pages.yml
 
 # LaTeX build artefacts from tools/build_cv.py
 cv/cv.tex
+cv/publications.tex
 cv/*.aux
 cv/*.log
 cv/*.out
@@ -17,3 +18,4 @@ cv/*.pdf
 # Personal contact details, deliberately kept out of the public repo
 _data/private.yml
 cv-private.pdf
+publications-private.pdf

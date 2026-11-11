@@ -676,7 +676,10 @@
 % FIXED: the entry had no row terminator, so its link ran into the next entry's
 % authors. Each entry is now two paragraphs with a little air after it.
 \newcommand*{\cvpublication}[3]{%
-  \publicationauthorstyle{#1}, \publicationtitlestyle{#2}\par
+  % Keep an entry whole: reserve room for authors, title and link line so the
+  % link never lands alone on the next page (needspace is loaded by the document).
+  \needspace{7\baselineskip}%
+  \publicationauthorstyle{#1}, \publicationtitlestyle{#2}\par\nopagebreak
   \small{\faLink}\hspace{2.0mm}\publicationlinkstyle{#3}\par
   \vspace{0.6em}
 }

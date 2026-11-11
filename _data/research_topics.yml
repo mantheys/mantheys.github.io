@@ -237,3 +237,63 @@
         amb un resultat de (3,7 ± 0,3) % a 4,5 V de sobretensió
         ([arXiv:2511.12328](https://arxiv.org/abs/2511.12328)). Aquests resultats alimenten
         l'ajust de la simulació i l'optimització del detector.
+
+- id: quantum-sensors
+  title: {en: Quantum sensors, es: Sensores cuánticos, ca: Sensors quàntics}
+  body:
+    en:
+      - >-
+        Before DUNE, my master's research at La Sapienza (Rome) was on **quantum
+        sensors** for rare-event searches: cryogenic **Microwave Kinetic Inductance
+        Detectors** (MKIDs), superconducting resonators whose resonance frequency shifts
+        when an energy deposit breaks Cooper pairs. This work was part of the
+        **BULLKID** R&D project (BULky and Low-Threshold Kinetic Inductance Detectors),
+        which targets **low-mass dark matter** and coherent neutrino scattering.
+      - >-
+        I took part in the lithographic design of the MKIDs, tuning their resonance
+        frequencies to allow frequency-domain multiplexing, and ran data-quality and
+        noise-performance studies on one of the project's first functional prototypes.
+        From them I derived the low-mass dark matter exclusion curves that a scaled-up
+        version of the prototype could reach.
+      - >-
+        The work was presented as a poster at the **Low Temperature Detectors**
+        conference (LTD19, 2021) and became my master's thesis, *BULLKID. Low Mass Dark
+        Matter Research with Microwave Kinetic Inductance Detectors (MKIDS)*.
+    es:
+      - >-
+        Antes de DUNE, mi investigación de máster en La Sapienza (Roma) se centró en
+        **sensores cuánticos** para la búsqueda de sucesos raros: **Detectores de
+        Inductancia Cinética de Microondas** (MKID) criogénicos, resonadores
+        superconductores cuya frecuencia de resonancia cambia cuando un depósito de
+        energía rompe pares de Cooper. Este trabajo formó parte del proyecto de I+D
+        **BULLKID** (BULky and Low-Threshold Kinetic Inductance Detectors), dirigido a la
+        **materia oscura de baja masa** y a la dispersión coherente de neutrinos.
+      - >-
+        Participé en el diseño litográfico de los MKID, ajustando sus frecuencias de
+        resonancia para permitir el multiplexado en frecuencia, y realicé estudios de
+        calidad de datos y de ruido en uno de los primeros prototipos funcionales del
+        proyecto. A partir de ellos obtuve las curvas de exclusión de materia oscura de
+        baja masa que alcanzaría una versión a mayor escala del prototipo.
+      - >-
+        El trabajo se presentó en forma de póster en el congreso **Low Temperature
+        Detectors** (LTD19, 2021) y fue mi tesis de máster, *BULLKID. Low Mass Dark Matter
+        Research with Microwave Kinetic Inductance Detectors (MKIDS)*.
+    ca:
+      - >-
+        Abans de DUNE, la meva recerca de màster a La Sapienza (Roma) es va centrar en
+        **sensors quàntics** per a la cerca d'esdeveniments rars: **Detectors d'Inductància
+        Cinètica de Microones** (MKID) criogènics, ressonadors superconductors la
+        freqüència de ressonància dels quals canvia quan un dipòsit d'energia trenca parells
+        de Cooper. Aquest treball va formar part del projecte d'R+D **BULLKID** (BULky and
+        Low-Threshold Kinetic Inductance Detectors), dirigit a la **matèria fosca de baixa
+        massa** i a la dispersió coherent de neutrins.
+      - >-
+        Vaig participar en el disseny litogràfic dels MKID, ajustant-ne les freqüències de
+        ressonància per permetre el multiplexatge en freqüència, i vaig fer estudis de
+        qualitat de dades i de soroll en un dels primers prototips funcionals del projecte.
+        D'aquí vaig obtenir les corbes d'exclusió de matèria fosca de baixa massa que
+        assoliria una versió a més escala del prototip.
+      - >-
+        El treball es va presentar en forma de pòster al congrés **Low Temperature
+        Detectors** (LTD19, 2021) i va ser la meva tesi de màster, *BULLKID. Low Mass Dark
+        Matter Research with Microwave Kinetic Inductance Detectors (MKIDS)*.
