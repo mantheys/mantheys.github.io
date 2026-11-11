@@ -84,6 +84,28 @@
   syncLang();
   window.addEventListener('pageshow', function (e) { if (e.persisted) syncLang(); });
 
+  // ----- Research tabs -----
+  // Panels are ids (#solar, ...), so /research/#solar opens that tab.
+
+  var tabsRoot = document.querySelector('[data-tabs]');
+  if (tabsRoot) {
+    var panels = tabsRoot.querySelectorAll('.tab-panel');
+    var links = tabsRoot.querySelectorAll('.tab-link');
+    var showTab = function () {
+      var id = decodeURIComponent(location.hash.slice(1));
+      if (!tabsRoot.querySelector('.tab-panel[id="' + id + '"]')) id = 'overview';
+      panels.forEach(function (p) { p.classList.toggle('active', p.id === id); });
+      links.forEach(function (a) {
+        var on = a.getAttribute('data-tab') === id;
+        a.classList.toggle('active', on);
+        a.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+    };
+    tabsRoot.classList.add('tabs-ready');
+    window.addEventListener('hashchange', showTab);
+    showTab();
+  }
+
   // ----- Dark Mode Toggle -----
 
   var toggle = document.getElementById('darkModeToggle');

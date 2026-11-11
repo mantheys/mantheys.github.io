@@ -1,0 +1,239 @@
+# Topic tabs on the Research page (website only; the CV uses research.yml).
+# `id` is the URL hash: /research/#solar. Home-page chips and keywords link here.
+- id: solar
+  title: {en: Solar neutrinos, es: Neutrinos solares, ca: Neutrins solars}
+  body:
+    en:
+      - >-
+        DUNE's far detector, four liquid-argon TPCs with 70 kt in total, sits 1.5 km
+        underground at SURF and can detect the most energetic solar neutrinos
+        (⁸B and *hep*) through charge-current absorption on argon,
+        νₑ + ⁴⁰Ar → e⁻ + ⁴⁰K\*. The outgoing electron carries up to ~13 MeV (⁸B) or
+        15 MeV (*hep*), an energy range polluted by radioactivity: ³⁹Ar and ⁴²Ar
+        β decays, radon progeny, neutron captures and cavern gammas.
+      - >-
+        My thesis presents, for the first time with DUNE's software, the complete
+        low-energy chain, from signal and background generation (MARLEY, Geant4 and
+        background model v3.6) to physics sensitivity, across the four proposed
+        Phase I configurations: the central and lateral volumes of the horizontal-drift
+        module and the top and bottom volumes of the vertical-drift module.
+      - >-
+        The de-excitation gammas of the potassium nucleus can carry more than half of
+        the neutrino energy into small clusters up to 100 cm from the electron.
+        Capturing them is key to the energy resolution, and the central
+        horizontal-drift volumes, shielded by the surrounding argon, lead all results.
+    es:
+      - >-
+        El detector lejano de DUNE, formado por cuatro TPC de argón líquido con 70 kt en
+        total, está a 1,5 km de profundidad en SURF y puede detectar los neutrinos solares
+        más energéticos (⁸B y *hep*) mediante la absorción de corriente cargada en argón,
+        νₑ + ⁴⁰Ar → e⁻ + ⁴⁰K\*. El electrón saliente lleva hasta ~13 MeV (⁸B) o 15 MeV
+        (*hep*), un rango de energías contaminado por radiactividad: desintegraciones β de
+        ³⁹Ar y ⁴²Ar, progenie del radón, capturas de neutrones y gammas de la caverna.
+      - >-
+        Mi tesis presenta, por primera vez con el software de DUNE, la cadena completa de
+        baja energía, desde la generación de señal y fondos (MARLEY, Geant4 y modelo de
+        fondo v3.6) hasta la sensibilidad física, en las cuatro configuraciones propuestas
+        para la Fase I: los volúmenes central y laterales del módulo de deriva horizontal y
+        los volúmenes superior e inferior del módulo de deriva vertical.
+      - >-
+        Las gammas de desexcitación del núcleo de potasio pueden llevarse más de la mitad
+        de la energía del neutrino a pequeños clústeres a hasta 100 cm del electrón.
+        Capturarlas es clave para la resolución en energía, y los volúmenes centrales del
+        deriva horizontal, apantallados por el argón circundante, lideran todos los
+        resultados.
+    ca:
+      - >-
+        El detector llunyà de DUNE, format per quatre TPC d'argó líquid amb 70 kt en total,
+        és a 1,5 km de profunditat a SURF i pot detectar els neutrins solars més energètics
+        (⁸B i *hep*) mitjançant l'absorció de corrent carregat en argó,
+        νₑ + ⁴⁰Ar → e⁻ + ⁴⁰K\*. L'electró sortint porta fins a ~13 MeV (⁸B) o 15 MeV
+        (*hep*), un rang d'energies contaminat per radioactivitat: desintegracions β de ³⁹Ar
+        i ⁴²Ar, progènie del radó, captures de neutrons i gammes de la caverna.
+      - >-
+        La meva tesi presenta, per primera vegada amb el programari de DUNE, la cadena
+        completa de baixa energia, des de la generació de senyal i fons (MARLEY, Geant4 i
+        model de fons v3.6) fins a la sensibilitat física, en les quatre configuracions
+        proposades per a la Fase I: els volums central i laterals del mòdul de deriva
+        horitzontal i els volums superior i inferior del mòdul de deriva vertical.
+      - >-
+        Les gammes de desexcitació del nucli de potassi poden endur-se més de la meitat de
+        l'energia del neutrí cap a petits clústers a fins a 100 cm de l'electró. Capturar-les
+        és clau per a la resolució en energia, i els volums centrals del deriva horitzontal,
+        apantallats per l'argó circumdant, lideren tots els resultats.
+
+- id: oscillations
+  title: {en: Neutrino oscillations, es: Oscilaciones de neutrinos, ca: Oscil·lacions de neutrins}
+  body:
+    en:
+      - >-
+        Three results quantify what DUNE can learn from solar neutrinos about
+        oscillations and matter effects.
+      - >-
+        **Day–night asymmetry.** Matter effects in the Earth modify the solar νₑ flux at
+        night. With the full Phase I the significance reaches 7.04σ with 20 DUNE-years and
+        exceeds 3σ after 3.63 DUNE-years, above the ~3σ currently reached by
+        Super-Kamiokande.
+      - >-
+        **HEP neutrino discovery.** The *hep* flux has never been measured. DUNE could
+        reach 9.51σ after 10 DUNE-years, a 10.5% precision on the flux.
+      - >-
+        **Solar oscillation parameter Δm²₂₁.** Solar and reactor experiments currently
+        disagree on this value. The combined detector separates them at 3.75σ with
+        30 detector-years per configuration, equivalent to a ~9.9% precision in the
+        central horizontal-drift volumes, which calls for better Phase II planning.
+      - >-
+        I also stress-test the assumptions behind these numbers (position and energy
+        estimation, charge threshold, background model and the vertical-drift membrane
+        veto) to understand their limits and the routes to improve them.
+    es:
+      - >-
+        Tres resultados cuantifican lo que DUNE puede aprender de los neutrinos solares
+        sobre oscilaciones y efectos de materia.
+      - >-
+        **Asimetría día-noche.** Los efectos de materia en la Tierra modifican el flujo
+        solar de νₑ por la noche. Con la Fase I completa la significancia alcanza 7,04σ con
+        20 años-DUNE y supera 3σ tras 3,63 años-DUNE, por encima de los ~3σ actuales de
+        Super-Kamiokande.
+      - >-
+        **Descubrimiento de neutrinos HEP.** El flujo *hep* nunca se ha medido. DUNE podría
+        alcanzar 9,51σ tras 10 años-DUNE, una precisión del 10,5 % en el flujo.
+      - >-
+        **Parámetro de oscilación solar Δm²₂₁.** Los experimentos solares y de reactor
+        discrepan hoy en su valor. El detector combinado los separa a 3,75σ con 30
+        años-detector por configuración, lo que equivale a una precisión de ~9,9 % en los
+        volúmenes centrales del deriva horizontal y apunta a la necesidad de planificar
+        mejor la Fase II.
+      - >-
+        También pongo a prueba las hipótesis detrás de estos números (estimación de
+        posición y energía, umbral de carga, modelo de fondo y veto de la membrana del
+        deriva vertical) para entender sus límites y las vías de mejora.
+    ca:
+      - >-
+        Tres resultats quantifiquen què pot aprendre DUNE dels neutrins solars sobre
+        oscil·lacions i efectes de matèria.
+      - >-
+        **Asimetria dia-nit.** Els efectes de matèria a la Terra modifiquen el flux solar
+        de νₑ a la nit. Amb la Fase I completa la significança arriba a 7,04σ amb 20
+        anys-DUNE i supera 3σ després de 3,63 anys-DUNE, per sobre dels ~3σ actuals de
+        Super-Kamiokande.
+      - >-
+        **Descobriment de neutrins HEP.** El flux *hep* mai no s'ha mesurat. DUNE podria
+        arribar a 9,51σ després de 10 anys-DUNE, una precisió del 10,5 % en el flux.
+      - >-
+        **Paràmetre d'oscil·lació solar Δm²₂₁.** Els experiments solars i de reactor
+        discrepen avui en el seu valor. El detector combinat els separa a 3,75σ amb 30
+        anys-detector per configuració, cosa que equival a una precisió de ~9,9 % als
+        volums centrals del deriva horitzontal i apunta a la necessitat de planificar millor
+        la Fase II.
+      - >-
+        També poso a prova les hipòtesis darrere d'aquests números (estimació de posició i
+        energia, llindar de càrrega, model de fons i veto de la membrana del deriva
+        vertical) per entendre'n els límits i les vies de millora.
+
+- id: lartpc
+  title: {en: Liquid argon TPCs, es: TPC de argón líquido, ca: TPC d'argó líquid}
+  body:
+    en:
+      - >-
+        Low-energy events in a liquid-argon time projection chamber (LArTPC) are tiny:
+        a few MeV spread over a handful of hits, next to a sea of radiological
+        backgrounds. I built the low-energy reconstruction chain in DUNE's LArSoft
+        framework.
+      - >-
+        TPC hits are grouped into clusters, optical hits are formed into flashes, each
+        cluster is matched to its flash, and the adjacent clusters produced by
+        de-excitation gammas are associated with the primary electron. Clustering
+        parameters were optimised on the true topology of the electron deposits, giving an
+        effective threshold of ~1 MeV in horizontal drift and a detection efficiency above
+        90% over 5.5 MeV.
+      - >-
+        To complete the calorimetric reconstruction, the charge is corrected for
+        attenuation along the drift coordinate, and four algorithms combine the electron
+        and the gammas to estimate the neutrino energy.
+    es:
+      - >-
+        Los sucesos de baja energía en una cámara de proyección temporal de argón líquido
+        (LArTPC) son diminutos: unos pocos MeV repartidos en un puñado de hits, junto a un
+        mar de fondos radiológicos. He construido la cadena de reconstrucción de baja
+        energía en el entorno LArSoft de DUNE.
+      - >-
+        Los hits de la TPC se agrupan en clústeres, los hits ópticos forman destellos, cada
+        clúster se empareja con su destello y los clústeres adyacentes producidos por las
+        gammas de desexcitación se asocian al electrón primario. Los parámetros de
+        agrupación se optimizaron con la topología real de los depósitos del electrón, con
+        un umbral efectivo de ~1 MeV en deriva horizontal y una eficiencia de detección
+        superior al 90 % por encima de 5,5 MeV.
+      - >-
+        Para completar la reconstrucción calorimétrica, la carga se corrige por la
+        atenuación a lo largo de la coordenada de deriva y cuatro algoritmos combinan el
+        electrón y las gammas para estimar la energía del neutrino.
+    ca:
+      - >-
+        Els esdeveniments de baixa energia en una cambra de projecció temporal d'argó
+        líquid (LArTPC) són diminuts: uns pocs MeV repartits en un grapat de hits, al costat
+        d'un mar de fons radiològics. He construït la cadena de reconstrucció de baixa
+        energia a l'entorn LArSoft de DUNE.
+      - >-
+        Els hits de la TPC s'agrupen en clústers, els hits òptics formen flaixos, cada
+        clúster s'aparella amb el seu flaix i els clústers adjacents produïts per les gammes
+        de desexcitació s'associen a l'electró primari. Els paràmetres d'agrupament es van
+        optimitzar amb la topologia real dels dipòsits de l'electró, amb un llindar efectiu
+        de ~1 MeV en deriva horitzontal i una eficiència de detecció superior al 90 % per
+        sobre de 5,5 MeV.
+      - >-
+        Per completar la reconstrucció calorimètrica, la càrrega es corregeix per l'atenuació
+        al llarg de la coordenada de deriva i quatre algorismes combinen l'electró i les
+        gammes per estimar l'energia del neutrí.
+
+- id: photon-detection
+  title: {en: Photon detection, es: Detección de fotones, ca: Detecció de fotons}
+  body:
+    en:
+      - >-
+        The Photon Detection System (PDS) captures the scintillation light that, combined
+        with charge, sets the energy resolution of low-energy events. I studied the
+        vertical-drift module's PDS from two angles.
+      - >-
+        **Layout optimisation.** For the **X-ARAPUCA** modules on the membrane, a 4 × 20
+        arrangement with 0.8 m spacing gives the best balance of performance and
+        uniformity, and adding modules on the short walls removes most of the light loss at
+        the ends of the detector.
+      - >-
+        **Cryogenic measurements.** At CIEMAT I ran a campaign to measure the absolute
+        photon detection efficiency of the vertical-drift X-ARAPUCA in liquid argon,
+        giving (3.7 ± 0.3)% at 4.5 V overvoltage
+        ([arXiv:2511.12328](https://arxiv.org/abs/2511.12328)). These results feed
+        simulation tuning and detector optimisation.
+    es:
+      - >-
+        El Sistema de Detección de Fotones (PDS) capta la luz de centelleo que, junto con
+        la carga, fija la resolución en energía de los sucesos de baja energía. He estudiado
+        el PDS del módulo de deriva vertical desde dos frentes.
+      - >-
+        **Optimización de la distribución.** Para los módulos **X-ARAPUCA** de la
+        membrana, una disposición 4 × 20 con 0,8 m de separación ofrece la mejor
+        combinación de rendimiento y uniformidad, y añadir módulos en las paredes cortas
+        elimina la mayor parte de la pérdida de luz en los extremos del detector.
+      - >-
+        **Medidas criogénicas.** En el CIEMAT realicé una campaña para medir la eficiencia
+        absoluta de detección de fotones de la X-ARAPUCA del deriva vertical en argón
+        líquido, con un resultado de (3,7 ± 0,3) % a 4,5 V de sobretensión
+        ([arXiv:2511.12328](https://arxiv.org/abs/2511.12328)). Estos resultados alimentan
+        el ajuste de la simulación y la optimización del detector.
+    ca:
+      - >-
+        El Sistema de Detecció de Fotons (PDS) capta la llum de centelleig que, juntament
+        amb la càrrega, fixa la resolució en energia dels esdeveniments de baixa energia. He
+        estudiat el PDS del mòdul de deriva vertical des de dos fronts.
+      - >-
+        **Optimització de la distribució.** Per als mòduls **X-ARAPUCA** de la membrana, una
+        disposició 4 × 20 amb 0,8 m de separació ofereix la millor combinació de rendiment i
+        uniformitat, i afegir mòduls a les parets curtes elimina la major part de la pèrdua
+        de llum als extrems del detector.
+      - >-
+        **Mesures criogèniques.** Al CIEMAT vaig fer una campanya per mesurar l'eficiència
+        absoluta de detecció de fotons de la X-ARAPUCA del deriva vertical en argó líquid,
+        amb un resultat de (3,7 ± 0,3) % a 4,5 V de sobretensió
+        ([arXiv:2511.12328](https://arxiv.org/abs/2511.12328)). Aquests resultats alimenten
+        l'ajust de la simulació i l'optimització del detector.

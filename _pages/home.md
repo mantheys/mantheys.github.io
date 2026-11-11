@@ -8,15 +8,14 @@ permalink: /
 <p class="home-hero-sub">{% include t.html key="site_title" %} &middot; {{ site.institution }}</p>
 
 <div class="chip-container" markdown="0">
-<a href="{{ '/research' | relative_url }}" class="chip">{% include t.html key="chip_oscillations" %}</a>
-<a href="{{ '/research' | relative_url }}" class="chip">{% include t.html key="chip_solar" %}</a>
-<a href="{{ '/research' | relative_url }}" class="chip">{% include t.html key="chip_lartpc" %}</a>
-<a href="{{ '/research' | relative_url }}" class="chip">{% include t.html key="chip_pds" %}</a>
-<a href="{{ '/research' | relative_url }}" class="chip">X-ARAPUCA</a>
-<a href="{{ '/research' | relative_url }}" class="chip">DUNE</a>
+<a href="{{ '/research/' | relative_url }}#oscillations" class="chip">{% include t.html key="chip_oscillations" %}</a>
+<a href="{{ '/research/' | relative_url }}#solar" class="chip">{% include t.html key="chip_solar" %}</a>
+<a href="{{ '/research/' | relative_url }}#lartpc" class="chip">{% include t.html key="chip_lartpc" %}</a>
+<a href="{{ '/research/' | relative_url }}#photon-detection" class="chip">{% include t.html key="chip_pds" %}</a>
+<a href="{{ '/research/' | relative_url }}#overview" class="chip">DUNE</a>
 </div>
 
-<div markdown="0">{% include t.html key="home_intro" md=true %}</div>
+<div markdown="0">{% capture research_url %}{{ '/research/' | relative_url }}{% endcapture %}{% include t.html key="home_intro" md=true sub="@R@" with=research_url %}</div>
 
 <div class="callout callout-success" markdown="0">
 <div class="callout-title">{% include icon.html name="cv" class="callout-icon" %} {% include t.html key="cv" %}</div>
