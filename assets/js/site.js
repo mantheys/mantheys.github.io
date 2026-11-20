@@ -241,8 +241,10 @@
         }
       });
     }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px'
+      // Any overlap will do. A ratio like 0.1 can never be reached by an
+      // element taller than ten viewports (the Papers page on a phone), which
+      // would leave it invisible.
+      threshold: 0
     });
 
     fadeElements.forEach(function (el) {
