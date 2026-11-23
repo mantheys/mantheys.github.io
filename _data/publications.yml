@@ -314,6 +314,25 @@ selected:
   selected: true
   first_author: false
 collaboration:
+- key: DUNE:2026zju
+  recid: '3229414'
+  bibtype: unpublished
+  title: Cosmic ray muon seasonal variations with the ProtoDUNE-SP Detector
+  authors:
+  - DUNE Collaboration
+  et_al: false
+  n_authors: 1337
+  collaboration: DUNE
+  journal: null
+  volume: null
+  number: null
+  pages: null
+  year: '2026'
+  date: '2026-11-13'
+  doi: null
+  arxiv: '2611.18997'
+  selected: false
+  first_author: false
 - key: DUNE:2026zcq
   recid: '3226345'
   bibtype: unpublished
